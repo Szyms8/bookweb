@@ -453,7 +453,7 @@ main {
 	background-color: #c6bcb6;
 	background-color: #fff2e1;
 	background-color: #e0e2e4;
-	box-shadow: 0px 1px 5px black;
+	// box-shadow: 0px 1px 5px black;
 
 	.wrapper-revievs {
 		display: flex;
@@ -543,61 +543,15 @@ main {
 		}
 	}
 
-	.wrapper-launch {
-		// height: 80vh;
-		background-color: #e0e2e4;
-		background-color: #fff;
+	// .wrapper-launch {
+	// 	// height: 80vh;
+	// 	background-color: #e0e2e4;
+	// 	background-color: #fff;
 
-		// padding: 40px 0px;
-	}
+	// 	// padding: 40px 0px;
+	// }
 
-	.wrapper-forum {
-		
-		// height: 1000px;
-		// height: 100vh;
-		.hr-line {
-			// position: relative;
-			// top: 1%;
-			// left: 50%;
-			// transform: translate(-50%, -50%);
-			align-items: center;
-			width: 90%;
-			border: 1px solid rgba(255, 255, 255, 0.2);
-			// margin: 20px;
-			background-color: black;
-		}
-
-		.forum {
-			// position: relative;
-			// top: 50%;
-			// left: 50%;
-			// transform: translate(-50%, -50%);
-
-			width: 90%;
-			// height: 400px;
-			background-color: #fff;
-			color: #000;
-			margin-top: 20px;
-			border-radius: 5px;
-			
-
-			// .img-profile {
-			// 	width: 50px;
-			// 	height: 50px;
-			// 	border-radius: 50%;
-			// 	margin: 5px;
-			// }
-			// .profile-box {
-			// 	margin: 10px;
-			// 	font-family: Arial, Helvetica, sans-serif;
-			// 	.description {
-			// 		margin: 10px;
-			// 		margin-top: 30px;
-			// 		font-family: Arial, Helvetica, sans-serif;
-			// 	}
-			// }
-		}
-	}
+	// HOMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
 	.p-recent {
 		display: inline-block;
@@ -607,7 +561,8 @@ main {
 		font-size: 3.5rem;
 		// color: #fff;
 		text-shadow: 1px 1px 2px black;
-		padding: 25px 25px;
+		// padding: 25px 25px;
+		// margin: 10px;
 	}
 	.p-month {
 		text-align: center;
@@ -618,34 +573,54 @@ main {
 	}
 	.recent {
 		position: relative;
-		// top: 10px;
 		width: 100%;
 		overflow: scroll;
 		white-space: nowrap;
 		// border: 2px solid black;
+		// background-color: #fff;
 		border-radius: 5px;
-		// z-index: ;
+		margin: 5px;
 
 		.cards {
 			display: inline-block;
 			position: relative;
-			// top: 50%;
-			// transform: translateY(-50%);
-			height: 300px;
+			height: 250px;
 			width: 200px;
-			// margin: 25px;
-			// margin-top: 0px;
-			// margin-bottom: 50px;
+			// height: 100%;
+			// width: 100%;
 			margin: 20px 25px;
-			border: 2px solid black;
+			cursor: pointer;
+			// border: 2px solid black;
+
+			.rec {
+				width: 100%;
+				height: 30px;
+				// background-color: red;
+				padding: 5px;
+				color: black;
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: center;
+				// padding: 10px;
+				// box-shadow: 1px 1px 5px black;
+				margin-bottom: 5px;
+			}
+			.card-a {
+				width: 100%;
+				height: 100%;
+				background-image: url("../img/default.jpeg");
+				background-position: center;
+				background-size: 180px 100%;
+				background-repeat: no-repeat;
+				border: none;
+				// box-shadow: 1px 1px 5px black;
+			}
+			.card-b {
+				background-image: url("../img/goodfather.jpeg");
+			}
 		}
-		.card-a {
-			background-image: url("../img/default.jpeg");
-			background-position: center;
-			background-size: 200px 300px;
-			background-repeat: no-repeat;
-			border: none;
-			box-shadow: 1px 1px 5px black;
+		.cards:hover {
+			transform: scale(1.1);
+			transition: 0.3s;
 		}
 	}
 
