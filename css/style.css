@@ -322,6 +322,37 @@ select {
   box-shadow: 0px 1px 5px black;
   z-index: 100;
 }
+.navbar .parent {
+  position: relative;
+  width: 100px;
+}
+.navbar .child {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  top: 105%;
+  text-align: center;
+  border-radius: 3px;
+  background: #96897f;
+  transition: 3s;
+}
+.navbar .child a {
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+}
+.navbar .child a:hover {
+  width: 100%;
+  background-color: #c6bcb6;
+  border-radius: 3px;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.navbar .parent:hover .child {
+  display: inline-block;
+  opacity: 1;
+  transition: 3s;
+}
 .navbar ul {
   display: flex;
   align-items: center;
@@ -366,6 +397,10 @@ select {
   transition: 0.3s;
 }
 
+.navbar-links-logo {
+  margin-right: 7px;
+}
+
 .navbar-toggle:hover {
   color: #000;
 }
@@ -408,8 +443,7 @@ main .wrapper-revievs .friends-ratings {
 }
 main .wrapper-revievs .friends-ratings .rating {
   margin: 20px;
-  height: 300px;
-  width: 90%;
+  width: 95%;
   box-shadow: 1px 1px 5px black;
   border-radius: 5px;
 }
@@ -434,12 +468,19 @@ main .wrapper-revievs .friends-ratings .rating .header p {
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
+  white-space: pre-wrap;
 }
 main .wrapper-revievs .friends-ratings .rating .picture {
   display: flex;
+  flex-wrap: w;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   height: 65%;
+}
+main .wrapper-revievs .friends-ratings .rating .picture h2 {
+  margin: 10px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 main .wrapper-revievs .friends-ratings .rating .picture div {
   justify-content: start;
@@ -453,6 +494,25 @@ main .wrapper-revievs .friends-ratings .rating .picture p {
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #000;
+}
+main .wrapper-revievs .friends-ratings .rating .picture .read-more-button {
+  margin: 10px;
+  border: none;
+  background: none;
+}
+main .wrapper-revievs .friends-ratings .rating .picture .read-more-button .read-more {
+  font-size: 1.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  cursor: pointer;
+}
+main .wrapper-revievs .friends-ratings .rating .picture .read-more-button img {
+  position: relative;
+  top: 7px;
+  left: -40px;
+}
+main .wrapper-revievs .friends-ratings .rating .picture .read-more:hover {
+  color: #399;
 }
 main .wrapper-revievs .friends-ratings .rating .picture .star {
   width: 40px;
@@ -512,14 +572,20 @@ main .recent .cards .rec {
 main .recent .cards .card-a {
   width: 100%;
   height: 100%;
-  background-image: url("../img/default.jpeg");
+  background-image: url("../img/musk.jpeg");
   background-position: center;
   background-size: 180px 100%;
   background-repeat: no-repeat;
   border: none;
 }
+main .recent .cards .card-a {
+  background-image: url("../img/musk.jpeg");
+}
 main .recent .cards .card-b {
   background-image: url("../img/goodfather.jpeg");
+}
+main .recent .cards .card-c {
+  background-image: url("../img/sapiens-czesc-1-narodziny-ludzkosci-opowiesc-graficzna-w-iext120978306.jpeg");
 }
 main .recent .cards:hover {
   transform: scale(1.1);
@@ -911,7 +977,57 @@ footer {
     color: #399;
   }
 }
+@media (max-width: 576px) {
+  .wrapper-revievs .friends-ratings .rating .picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    height: 65%;
+  }
+}
 @media (max-width: 900px) {
+  .navbar {
+    position: sticky;
+    top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 1px 5px black;
+    z-index: 100;
+  }
+  .navbar .navbar-toggle {
+    display: block;
+  }
+  .navbar .parent {
+    display: block;
+    width: 100px;
+  }
+  .navbar .child {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    top: 105%;
+    text-align: center;
+    border-radius: 3px;
+    background: #96897f;
+    transition: 3s;
+  }
+  .navbar .child a {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+  }
+  .navbar .child a:hover {
+    width: 100%;
+    background-color: #c6bcb6;
+    border-radius: 3px;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  .navbar .parent:hover .child {
+    display: inline-block;
+    opacity: 1;
+    transition: 3s;
+  }
   .navbar ul {
     flex-wrap: wrap;
   }
