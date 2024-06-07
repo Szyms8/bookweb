@@ -128,6 +128,9 @@ document.addEventListener("DOMContentLoaded", main);
 const navbarV = document.getElementsByClassName("navbar-toggle")[0];
 const navbarV2 = document.getElementsByClassName("navbar-toggle2")[0];
 const navbarLinksV = document.getElementsByClassName("navbar-links");
+const scrollLBtn = document.querySelector(".scrolll");
+const scrollRBtn = document.querySelector(".scrollr");
+
 
 const functionShow = () => {
 	for (let i = 0; i < navbarLinksV.length; i++) {
@@ -137,6 +140,19 @@ const functionShow = () => {
 	}
 };
 
+
+
+
+function fscrollL() {
+	let left = document.querySelector(".scroll-images");
+	left.scrollBy(350, 0);
+}
+function fscrollR() {
+	let left = document.querySelector(".scroll-images");
+	left.scrollBy(-350, 0);
+}
+
 navbarV.addEventListener("click", functionShow);
 navbarV2.addEventListener("click", functionShow);
-
+scrollLBtn.addEventListener("click", fscrollL);
+scrollRBtn.addEventListener("click", fscrollR);
