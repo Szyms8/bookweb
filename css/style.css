@@ -427,6 +427,79 @@ main {
   background-color: #fff2e1;
   background-color: #e0e2e4;
 }
+main .main-scroll-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 100%;
+  margin: 20px;
+}
+main .main-scroll-div .icon {
+  color: #399;
+  background-color: inherit;
+  font-size: 1.9rem;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
+main .main-scroll-div .icon:hover {
+  color: rgb(44, 146, 146);
+}
+main .main-scroll-div .cover {
+  position: relative;
+  width: 90%;
+  height: 50%;
+}
+main .main-scroll-div .cover .scroll-images {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+main .main-scroll-div .cover .scroll-images .child {
+  min-width: 600px;
+  height: 450px;
+  margin: 1px 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+main .main-scroll-div .cover .scroll-images .child .child-img {
+  width: 100%;
+  height: 100%;
+}
+main .main-scroll-div .cover .scroll-images::-webkit-scrollbar {
+  display: none;
+}
+main .main-scroll-div .cover .scroll-images {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+main .main-scroll-div .cover::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 150px;
+  background-image: linear-gradient(90deg, black, transparent);
+}
+main .main-scroll-div .cover::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: 100%;
+  width: 150px;
+  background-image: linear-gradient(-90deg, black, transparent);
+}
 main .wrapper-revievs {
   display: flex;
   flex-direction: column;
@@ -590,6 +663,13 @@ main .recent .cards .card-c {
 main .recent .cards:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+main .recent::-webkit-scrollbar {
+  display: none;
+}
+main .recent {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 main .p-margin {
   height: 80px;
@@ -984,6 +1064,81 @@ footer {
     justify-content: start;
     align-items: start;
     height: 65%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  main .main-scroll-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 100%;
+    margin: 20px;
+    overflow: hidden;
+  }
+  main .main-scroll-div .icon {
+    color: #399;
+    background-color: inherit;
+    font-size: 1.9rem;
+    outline: none;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  main .main-scroll-div .icon:hover {
+    color: rgb(44, 146, 146);
+  }
+  main .main-scroll-div .cover {
+    position: relative;
+    width: 100%;
+    height: 90%;
+  }
+  main .main-scroll-div .cover .scroll-images {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+  main .main-scroll-div .cover .scroll-images .child {
+    min-width: 300px;
+    height: 350px;
+    margin: 1px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+  main .main-scroll-div .cover .scroll-images .child .child-img {
+    width: 100%;
+    height: 100%;
+  }
+  main .main-scroll-div .cover .scroll-images::-webkit-scrollbar {
+    display: none;
+  }
+  main .main-scroll-div .cover .scroll-images {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  main .main-scroll-div .cover::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 25px;
+    background-image: linear-gradient(90deg, black, transparent);
+  }
+  main .main-scroll-div .cover::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 100%;
+    width: 25px;
+    background-image: linear-gradient(-90deg, black, transparent);
   }
 }
 @media (max-width: 900px) {

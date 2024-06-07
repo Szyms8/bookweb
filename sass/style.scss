@@ -500,6 +500,89 @@ main {
 	background-color: #e0e2e4;
 	// box-shadow: 0px 1px 5px black;
 
+	// HORISONTAL MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
+
+	.main-scroll-div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		// border: 2px solid red;
+		width: 90%;
+		height: 100%;
+		margin: 20px;
+		.icon {
+			color: #399;
+			background-color: inherit;
+			font-size: 1.9rem;
+			outline: none;
+			border: none;
+			padding: 0 20px;
+			cursor: pointer;
+		}
+		.icon:hover {
+			color: rgb(44, 146, 146);
+		}
+		.cover {
+			position: relative;
+			width: 90%;
+			height: 50%;
+			.scroll-images {
+				position: relative;
+				width: 100%;
+				height: auto;
+				display: flex;
+				justify-content: left;
+				align-items: center;
+				overflow: auto;
+				scroll-behavior: smooth;
+				.child {
+					min-width: 600px;
+					height: 450px;
+					margin: 1px 10px;
+					border: 1px solid black;
+					cursor: pointer;
+					.child-img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+				// .down {
+				// 	width: 100%;
+				// 	height: 30%;
+				// 	background-color: black;
+				// }
+			}
+			.scroll-images::-webkit-scrollbar {
+				display: none;
+			}
+			.scroll-images {
+				-ms-overflow-style: none; /* IE and Edge */
+				scrollbar-width: none; /* Firefox */
+			}
+		}
+
+		.cover::before {
+			position: absolute;
+			content: "";
+			left: 0;
+			top: 0;
+			z-index: 99;
+			height: 100%;
+			width: 150px;
+			background-image: linear-gradient(90deg, black, transparent);
+		}
+		.cover::after {
+			position: absolute;
+			content: "";
+			right: 0;
+			top: 0;
+			z-index: 99;
+			height: 100%;
+			width: 150px;
+			background-image: linear-gradient(-90deg, black, transparent);
+		}
+	}
+
 	.wrapper-revievs {
 		display: flex;
 		flex-direction: column;
@@ -589,9 +672,8 @@ main {
 					}
 					.read-more:hover {
 						color: #399;
-
 					}
-					
+
 					.star {
 						// display: inline-block;
 						width: 40px;
@@ -702,6 +784,17 @@ main {
 			transition: 0.3s;
 		}
 	}
+	.recent::-webkit-scrollbar {
+		display: none;
+	}
+	.recent {
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
+	}
+
+	// .recent: -webkit-scrollbar {
+	// 	-webkit-appearance: none;
+	// }
 
 	.p-margin {
 		height: 80px;
@@ -1243,24 +1336,106 @@ footer {
 
 @media (max-width: 576px) {
 	.wrapper-revievs {
-		
 		.friends-ratings {
-		
+			// width: 98%;
+
 			.rating {
-				
-				
+				// width: 98%;
+
 				.picture {
 					display: flex;
 					flex-wrap: wrap;
 					justify-content: start;
 					align-items: start;
 					height: 65%;
-					// border: 2px solid rgba(255, 255, 255, 0.2);
+					border: 2px solid rgba(255, 255, 255, 0.2);
 				}
 			}
 		}
 	}
-				
+	main {
+		.main-scroll-div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			// border: 2px solid red;
+			width: 95%;
+			height: 100%;
+			margin: 20px;
+			overflow: hidden;
+			.icon {
+				color: #399;
+				background-color: inherit;
+				font-size: 1.9rem;
+				outline: none;
+				border: none;
+				padding: 0 20px;
+				cursor: pointer;
+			}
+			.icon:hover {
+				color: rgb(44, 146, 146);
+			}
+			.cover {
+				position: relative;
+				width: 100%;
+				height: 90%;
+				.scroll-images {
+					position: relative;
+					width: 100%;
+					height: auto;
+					display: flex;
+					justify-content: left;
+					align-items: center;
+					overflow: auto;
+					scroll-behavior: smooth;
+					.child {
+						min-width: 300px;
+						height: 350px;
+						margin: 1px 10px;
+						border: 1px solid black;
+						cursor: pointer;
+						.child-img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					// .down {
+					// 	width: 100%;
+					// 	height: 30%;
+					// 	background-color: black;
+					// }
+				}
+				.scroll-images::-webkit-scrollbar {
+					display: none;
+				}
+				.scroll-images {
+					-ms-overflow-style: none; /* IE and Edge */
+					scrollbar-width: none; /* Firefox */
+				}
+			}
+
+			.cover::before {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 0;
+				z-index: 99;
+				height: 100%;
+				width: 25px;
+				background-image: linear-gradient(90deg, black, transparent);
+			}
+			.cover::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 0;
+				z-index: 99;
+				height: 100%;
+				width: 25px;
+				background-image: linear-gradient(-90deg, black, transparent);
+			}
+		}
+	}
 }
 
 @media (max-width: 900px) {
