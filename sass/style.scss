@@ -500,6 +500,38 @@ main {
 	background-color: #e0e2e4;
 	// box-shadow: 0px 1px 5px black;
 
+	// MUSKKKKKKKKKKKKKKKKKKK MENUUUUUUUUUUUUUUUUUUUUUUUU
+
+	.reviev-page-big {
+		display: grid;
+
+		position: relative;
+		width: 90%;
+		// height: 800px;
+		margin: 10px;
+		// border: 1px solid black;
+		.img-musk {
+			float: left;
+			width: 40%;
+			margin: 1rem;
+		}
+		h1, .text-musk{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 2rem;
+			color: #000;
+			margin: 15px;
+		}
+		.musk-paragraph {
+			background-color: #c6bcb6;
+			margin: 20px;
+			padding: 20px;
+			h1 {
+				font-size: 3rem;
+
+			}
+		}
+	}
+
 	// HORISONTAL MENUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU
 
 	.main-scroll-div {
