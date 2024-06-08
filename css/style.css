@@ -192,6 +192,9 @@ html {
   color: #fff;
   color: wheat;
 }
+html .output-api h2 {
+  color: #000;
+}
 
 body {
   position: relative;
@@ -431,14 +434,14 @@ main .reviev-page-big {
   display: grid;
   position: relative;
   width: 90%;
-  margin: 10px;
 }
 main .reviev-page-big .img-musk {
   float: left;
   width: 40%;
-  margin: 1rem;
+  margin: 10px;
 }
-main .reviev-page-big h1, main .reviev-page-big .text-musk {
+main .reviev-page-big h1,
+main .reviev-page-big .text-musk {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: #000;
@@ -446,7 +449,7 @@ main .reviev-page-big h1, main .reviev-page-big .text-musk {
 }
 main .reviev-page-big .musk-paragraph {
   background-color: #c6bcb6;
-  margin: 20px;
+  margin: 15px;
   padding: 20px;
 }
 main .reviev-page-big .musk-paragraph h1 {

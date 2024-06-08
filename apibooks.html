@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e2ec3e229b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400..700&family=Raleway:wght@200;400;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <script>
+        function getbooks() {
+            document.getElementById("output").innerHTML = "";
+            fetch("http://openlibrary.org/search.json?q=" + document.getElementById("input").value)
+                .then(a => a.json())
+                .then(response => {
+                    for (var i = 0; i < 10; i++) {
+                        document.getElementById("output").innerHTML += "<h2>" + response.docs[i].title + "<h2>" + response.docs[i].author_name[0] + "<br><img src='http://covers.openlibrary.org/b/isbn/" + response.docs[i].isbn[0] + "-M.jpg'><br>";
+                    }
+                });
+        }
+    </script>
+
+
+    <header class="header">
+        <div class="header-img">
+            <div class="header-bgc"></div>
+            <div class="header-title">
+                <h1 class="h1">Book Journal</h1>
+                <p class="paragraph">All Your Books In One Place</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <!-- <li class="navbar-logo"><i class="fa-solid fa-book-open"></i></li> -->
+            <li class="navbar-logo"><i><img src="./img/book-closed-svgrepo-com-kopia.svg" alt=""></i></li>
+            <li class="navbar-toggle"><i class="fa-solid fa-bars"></i></li>
+            <li class="navbar-toggle2 none"><i class="fa-solid fa-xmark"></i></li>
+            <li class="navbar-links"><a class="active" href="./index.html">Home</a></li>
+            <!-- <div class="parent">
+                <div class="child">
+                    <a class="active" href="./index.html">Home</a>
+                    <a class="active" href="./index.html">Home</a>
+                    <a class="active" href="./index.html">Home</a>
+                </div>
+            </div> -->
+
+            <li class="navbar-links"><a href="./reviews.html">Reviews</a></li>
+            <li class="navbar-links"><a href="./mybookshellf.html">My Bookshelf</a></li>
+            <li class="navbar-links"><a href="./challenges.html">Challenges</a></li>
+            <li class="navbar-links"><a href="./statistics.html">My Profile</a></li>
+            <li class="navbar-links navbar-links-logo"><a href="./login.html"><i class="fa-solid fa-user"></i> Login</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="center">
+        <input type="text" id="input">
+        <button onclick="getbooks()">Get books</button>
+
+        <br>
+        <div class="output-api" id="output"></div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+    </main>
+
+
+    <section class="contact">
+        <div class="contact-img">
+            <div class="contact-bg"></div>
+            <div class="contact-text">
+                <h1></h1>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="tac">&copy 2024|Book Journal</p>
+    </footer>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
