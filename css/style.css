@@ -221,7 +221,7 @@ select {
   transform: translate(-50%, -50%);
 }
 
-.center {
+.center-1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -420,6 +420,11 @@ select {
 
 .navbar-links:hover a {
   transition: 0.3s;
+}
+
+.book-list {
+  margin-top: 50px;
+  visibility: hidden;
 }
 
 main {
