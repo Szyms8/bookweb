@@ -88,8 +88,8 @@ $(document).ready(function() {
                <img src="${bookImg}" class="card-img" alt="...">
              </div>
              <div class="col-md-8">
-               <div class="card-body">
-                 <h5 class="card-title">${title}</h5>
+               <div class="card-body container-api-img-writing">
+                 <h5 class="card-title h5-title">${title}</h5>
                  <p class="card-text">Author: ${author}</p>
                  <p class="card-text">Publisher: ${publisher}</p>
                  <a target="_blank" href="${viewUrl}" class="btn btn-secondary">Read Book</a>
