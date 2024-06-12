@@ -452,6 +452,9 @@ main .reviev-page-big .text-musk {
   color: #000;
   margin: 15px;
 }
+main .reviev-page-big h4 {
+  margin-top: 5px;
+}
 main .reviev-page-big .musk-paragraph {
   background-color: #c6bcb6;
   margin: 15px;
@@ -650,6 +653,17 @@ main .p-month {
   text-shadow: 1px 1px 2px black;
   padding: 25px 25px;
 }
+main .icon-scroll-recomended .icon {
+  position: relative;
+  top: -60px;
+  color: #399;
+  background-color: inherit;
+  font-size: 1.9rem;
+  outline: none;
+  border: none;
+  padding: 0 20px;
+  cursor: pointer;
+}
 main .recent {
   position: relative;
   width: 100%;
@@ -657,6 +671,7 @@ main .recent {
   white-space: nowrap;
   border-radius: 5px;
   margin: 5px;
+  scroll-behavior: smooth;
 }
 main .recent .cards {
   display: inline-block;
@@ -732,7 +747,8 @@ main .p-margin {
 .container-my-front .container-api-img-writing .h5-title {
   margin: 5px;
 }
-.container-my-front .container-api-img-writing h5, .container-my-front .container-api-img-writing p {
+.container-my-front .container-api-img-writing h5,
+.container-my-front .container-api-img-writing p {
   margin: 5px;
 }
 .container-my-front .btn-primary {

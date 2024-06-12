@@ -130,6 +130,8 @@ const navbarV2 = document.getElementsByClassName("navbar-toggle2")[0];
 const navbarLinksV = document.getElementsByClassName("navbar-links");
 const scrollLBtn = document.querySelector(".scrolll");
 const scrollRBtn = document.querySelector(".scrollr");
+const cardsBtnL = document.querySelector(".scrolll-recomended-left")
+const cardsBtnR = document.querySelector(".scrollr-recomended-right")
 
 
 const functionShow = () => {
@@ -145,14 +147,27 @@ const functionShow = () => {
 
 function fscrollL() {
 	let left = document.querySelector(".scroll-images");
-	left.scrollBy(350, 0);
+	left.scrollBy(-350, 0);
 }
 function fscrollR() {
 	let left = document.querySelector(".scroll-images");
+	left.scrollBy(350, 0);
+}
+
+function fscrollLCardsL() {
+	let left = document.querySelector(".recent");
 	left.scrollBy(-350, 0);
+	// console.log("dipa");
+}
+function fscrollLCardsR() {
+	let left = document.querySelector(".recent");
+	left.scrollBy(350, 0);
+	// console.log("dipa");
 }
 
 navbarV.addEventListener("click", functionShow);
 navbarV2.addEventListener("click", functionShow);
 scrollLBtn.addEventListener("click", fscrollL);
 scrollRBtn.addEventListener("click", fscrollR);
+cardsBtnL.addEventListener("click", fscrollLCardsL);
+cardsBtnR.addEventListener("click", fscrollLCardsR);

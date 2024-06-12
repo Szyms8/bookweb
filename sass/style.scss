@@ -418,6 +418,9 @@ select {
 			transition: 0.3s;
 		}
 	}
+	// .fa-user {
+	// 	margin: 3px;
+	// }
 	.parent:hover .child {
 		display: inline-block;
 		opacity: 1;
@@ -467,7 +470,7 @@ select {
 }
 .navbar-links {
 	transition: 0.3s;
-	// margin: 6px;
+	// margin-right: 3px;
 }
 .navbar-links-logo {
 	margin-right: 7px;
@@ -534,6 +537,9 @@ main {
 			font-size: 2rem;
 			color: #000;
 			margin: 15px;
+		}
+		h4 {
+			margin-top: 5px;
 		}
 		.musk-paragraph {
 			background-color: #c6bcb6;
@@ -752,6 +758,11 @@ main {
 	// }
 
 	// HOMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+	.recent {
+		// margin: 20px;
+		// width: 80vh;
+		// border: 1px solid black;
+	}
 
 	.p-recent {
 		display: inline-block;
@@ -761,8 +772,6 @@ main {
 		font-size: 3.5rem;
 		// color: #fff;
 		text-shadow: 1px 1px 2px black;
-		// padding: 25px 25px;
-		// margin: 10px;
 	}
 	.p-month {
 		text-align: center;
@@ -770,6 +779,21 @@ main {
 		font-size: 3rem;
 		text-shadow: 1px 1px 2px black;
 		padding: 25px 25px;
+	}
+
+	// RECOMENDEDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+	.icon-scroll-recomended {
+		.icon {
+			position: relative;
+			top: -60px;
+			color: #399;
+			background-color: inherit;
+			font-size: 1.9rem;
+			outline: none;
+			border: none;
+			padding: 0 20px;
+			cursor: pointer;
+		}
 	}
 	.recent {
 		position: relative;
@@ -780,6 +804,7 @@ main {
 		// background-color: #fff;
 		border-radius: 5px;
 		margin: 5px;
+		scroll-behavior: smooth;
 
 		.cards {
 			display: inline-block;
@@ -844,10 +869,12 @@ main {
 	.p-margin {
 		height: 80px;
 	}
+	// .icon-scroll-recomended {
+
+	// }
 }
 
 // APIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-
 
 .container-my-front {
 	// display: flex;
@@ -860,7 +887,7 @@ main {
 	// transform: translate(-50%, -50%);
 	// margin: 0 20px;
 	// margin: 10px;
-	
+
 	.title-1 {
 		text-align: center;
 	}
@@ -884,8 +911,9 @@ main {
 		.h5-title {
 			margin: 5px;
 		}
-		
-		h5, p {
+
+		h5,
+		p {
 			margin: 5px;
 		}
 	}
