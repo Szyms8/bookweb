@@ -428,7 +428,6 @@ select {
 }
 
 main {
-  margin: 0 auto;
   background-color: #c6bcb6;
   background-color: #fff;
   background-color: #c6bcb6;
@@ -470,6 +469,7 @@ main .main-scroll-div {
   width: 90%;
   height: 100%;
   margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 main .main-scroll-div .icon {
   color: #399;
@@ -523,7 +523,7 @@ main .main-scroll-div .cover .scroll-images .child .child-img {
   height: 100%;
 }
 main .main-scroll-div .cover .scroll-images .child:hover {
-  transform: scale(0.99);
+  transform: scale(0.95);
 }
 main .main-scroll-div .cover .scroll-images::-webkit-scrollbar {
   display: none;
@@ -717,6 +717,67 @@ main .recent {
 }
 main .p-margin {
   height: 80px;
+}
+
+.main-category-book {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 2px black;
+}
+.main-category-book .arrivals {
+  width: 100%;
+  height: auto;
+  margin-bottom: 35px;
+}
+.main-category-book .arrivals h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.main-category-book .arrivals .arrivals-box {
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px 0;
+}
+.main-category-book .arrivals .arrivals-box .arrivals-card {
+  width: 250px;
+  height: 340px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+  margin: auto;
+}
+.main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-tag .arrivals-btn {
+  box-shadow: 1px 1px 3px #625750;
+  border-radius: 2px;
+  padding: 8px;
+}
+.main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-tag a.arrivals-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px black;
+}
+.main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-image {
+  width: 150px;
+  height: 215px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+  overflow: hidden;
+}
+.main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-image img {
+  width: 150px;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.3s;
+}
+.main-category-book .arrivals .arrivals-box .arrivals-card:hover .arrivals-image img {
+  transform: scale(1.1);
+}
+.main-category-book .arrivals .arrivals-box .arrivals-card:hover {
+  box-shadow: 0 0 2px black;
 }
 
 .container-my-front {
