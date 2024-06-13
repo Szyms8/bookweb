@@ -642,26 +642,26 @@ main {
 			}
 		}
 
-		.cover::before {
-			position: absolute;
-			content: "";
-			left: 0;
-			top: 0;
-			z-index: 99;
-			height: 100%;
-			width: 80px;
-			background-image: linear-gradient(90deg, black, transparent);
-		}
-		.cover::after {
-			position: absolute;
-			content: "";
-			right: 0;
-			top: 0;
-			z-index: 99;
-			height: 100%;
-			width: 80px;
-			background-image: linear-gradient(-90deg, black, transparent);
-		}
+		// .cover::before {
+		// 	position: absolute;
+		// 	content: "";
+		// 	left: 0;
+		// 	top: 0;
+		// 	z-index: 99;
+		// 	height: 100%;
+		// 	width: 80px;
+		// 	background-image: linear-gradient(90deg, black, transparent);
+		// }
+		// .cover::after {
+		// 	position: absolute;
+		// 	content: "";
+		// 	right: 0;
+		// 	top: 0;
+		// 	z-index: 99;
+		// 	height: 100%;
+		// 	width: 80px;
+		// 	background-image: linear-gradient(-90deg, black, transparent);
+		// }
 	}
 
 	.wrapper-revievs {

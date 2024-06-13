@@ -532,26 +532,6 @@ main .main-scroll-div .cover .scroll-images {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-main .main-scroll-div .cover::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  z-index: 99;
-  height: 100%;
-  width: 80px;
-  background-image: linear-gradient(90deg, black, transparent);
-}
-main .main-scroll-div .cover::after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  z-index: 99;
-  height: 100%;
-  width: 80px;
-  background-image: linear-gradient(-90deg, black, transparent);
-}
 main .wrapper-revievs {
   display: flex;
   flex-direction: column;
