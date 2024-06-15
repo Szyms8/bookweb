@@ -185,6 +185,7 @@
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-family: "Dancing Script", cursive;
+  font-family: "Playwrite AU SA", cursive;
   font-optical-sizing: auto;
   font-size: 62.5%;
   font-weight: 300;
@@ -435,6 +436,51 @@ main {
   background-color: #fff2e1;
   background-color: #e0e2e4;
 }
+main .about-us-container {
+  width: 85%;
+  background-color: rgb(174, 171, 171);
+}
+main .about-us-container .img-us {
+  width: 100%;
+  height: 600px;
+  background-image: url(../img/a-book-2304389_1920.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+main .about-us-container .img-us .p-and-line-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .about-us-container .img-us .p-and-line-container .p-month {
+  padding-top: 50px;
+  padding-bottom: 8px;
+}
+main .about-us-container .img-us .p-and-line-container .line {
+  width: 20%;
+  height: 4px;
+  border-radius: 1px;
+  background-color: #96897f;
+}
+main .about-us-container .img-us .bgc-about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.262745098);
+}
+main .about-us-container .img-us .bgc-about-us p {
+  font-size: 4.8rem;
+  font-family: "Playwrite AU SA", cursive;
+}
 main .reviev-page-big {
   display: grid;
   position: relative;
@@ -509,12 +555,13 @@ main .main-scroll-div .cover .scroll-images .child {
 }
 main .main-scroll-div .cover .scroll-images .child .bgc {
   position: absolute;
-  bottom: 150px;
+  bottom: 170px;
 }
-main .main-scroll-div .cover .scroll-images .child .bgc h2 {
+main .main-scroll-div .cover .scroll-images .child .bgc p {
   width: 299px;
   padding: 10px;
   text-align: center;
+  font-size: 2rem;
   background-color: rgba(0, 0, 0, 0.4470588235);
   text-shadow: 1px 1px 2px black;
 }
@@ -552,6 +599,8 @@ main .wrapper-revievs .friends-ratings .rating {
   width: 95%;
   box-shadow: 1px 1px 5px black;
   border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
 }
 main .wrapper-revievs .friends-ratings .rating .rating-inside {
   width: 100%;
@@ -562,6 +611,11 @@ main .wrapper-revievs .friends-ratings .rating .header {
   align-items: center;
   height: 20%;
   background-color: rgba(0, 0, 0, 0.068);
+  background-color: rgba(15, 98, 98, 0.144);
+  background-color: rgba(15, 98, 98, 0.144);
+  background-color: #fff;
+  background-color: whitesmoke;
+  border-bottom: 2px solid rgb(233, 233, 240);
 }
 main .wrapper-revievs .friends-ratings .rating .header .img-profile {
   width: 50px;
@@ -631,6 +685,8 @@ main .wrapper-revievs .friends-ratings .rating .comment {
   align-items: center;
   height: 15%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(245, 245, 245, 0.533);
+  border-top: 2px solid rgb(233, 233, 240);
 }
 main .wrapper-revievs .friends-ratings .rating .comment img {
   margin: 5px;
@@ -663,7 +719,7 @@ main .icon-scroll-recomended .icon {
 }
 main .recent {
   position: relative;
-  width: 100%;
+  width: 80%;
   overflow: scroll;
   white-space: nowrap;
   border-radius: 5px;
