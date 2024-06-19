@@ -454,21 +454,27 @@ main .p-and-line-container .line {
   background-color: #96897f;
 }
 main .about-us-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 1900px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
   margin: 5px;
-  border: 1px solid black;
+  margin-bottom: 40px;
+  width: 100%;
 }
 main .about-us-box .about-us {
-  width: 80%;
-  height: 100%;
-  border: 1px solid red;
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center center;
+  margin: 20px;
+  box-shadow: 0px 0px 3px black;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
 }
 main .about-us-box .about-us .p-style {
+  width: 250px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   text-shadow: 1px 1px 2px black;
@@ -479,20 +485,42 @@ main .about-us-box .about-us .text-style {
   text-shadow: 1px 1px 2px black;
 }
 main .about-us-box .about-us img {
-  position: relative;
   top: 30px;
-  height: 400px;
-  margin: 10px;
+  width: 100%;
+  height: auto;
+  padding: 10px;
 }
-main .about-us-box .about-us .img-left {
-  left: 10px;
+main .about-us-box .animation-1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.55s;
+  background-image: linear-gradient(400deg, rgb(152, 220, 206) 0%, rgb(182, 210, 223) 70%);
+  color: b;
 }
-main .about-us-box .about-us .img-right {
-  left: 30%;
+main .about-us-box .about-us-left:hover .animation-1 {
+  transform: rotateX(-180deg);
+  opacity: 1;
+}
+main .about-us-box .about-us-left:hover {
+  transform: rotateX(-180deg);
+  opacity: 1;
+}
+main .about-us-box .about-us-right:hover .animation-1 {
+  transform: rotateY(-180deg);
+  opacity: 1;
+}
+main .about-us-box .about-us-right:hover {
+  transform: rotateY(-180deg);
+  opacity: 1;
 }
 main .about-us-container {
   margin-top: 30px;
-  width: 85%;
+  width: 100%;
   background-color: rgb(174, 171, 171);
 }
 main .about-us-container .img-us {
@@ -1490,6 +1518,12 @@ footer {
     align-items: start;
     height: 65%;
     border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  main .about-us-box .about-us {
+    grid-auto-flow: row;
+  }
+  main .about-us-box .about-us .p-style {
+    width: 95%;
   }
   main .main-scroll-div {
     display: flex;
