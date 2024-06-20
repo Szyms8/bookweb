@@ -1227,10 +1227,8 @@ main {
 	}
 
 	.no-gutters {
-		
 		box-shadow: 1px 1px 5px black;
 	}
-
 
 	.container-api-img-writing {
 		// display: flex;
@@ -1337,6 +1335,7 @@ footer {
 	justify-content: center;
 	min-height: 100vh;
 	background-color: #c6bcb6;
+	text-shadow: 0 0 1px black;
 	// background: url("../img/books-4812032_1920.jpg");
 	// background-attachment: fixed;
 	// background-position: center;
@@ -1356,20 +1355,34 @@ footer {
 	}
 	.wrapper {
 		width: 450px;
-		// height: 85vh;
+		height: 85%;
 		padding: 30px 40px;
 		border-radius: 10px;
 		background: transparent;
 		border: 2px solid rgba(255, 255, 255, 0.2);
 		backdrop-filter: blur(3px);
 		margin: 40px 5px;
+		box-shadow: 0 0 1px black;
+
 
 		h1 {
 			font-size: 5.6rem;
 			text-align: center;
 		}
 		.btn {
+			position: relative;
 			margin-top: 40px;
+			a {
+				position: absolute;
+				top: 0px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				line-height: 45px;
+			}
+		}
+		a:hover  {
+			color: #399;
 		}
 		.input-box {
 			position: relative;
@@ -1475,7 +1488,6 @@ footer {
 	min-height: 100vh;
 	// background: url("../img/books-4812032_1920.jpg");
 	background-color: #c6bcb6;
-
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -1485,12 +1497,16 @@ footer {
 	grid-template-columns: repeat(2, minmax(150px, 1fr));
 	grid-template-rows: repeat(7, minmax(50px, 100px));
 	width: 550px;
-	// height: 85vh;
+	height: 85%;
 	margin: 10px;
 	border-radius: 10px;
 	background: transparent;
 	border: 2px solid rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(3px);
+	box-shadow: 0 0 1px black;
+	text-shadow: 0 0 1px black;
+
+	
 	.btn {
 		width: 80%;
 	}
@@ -1567,11 +1583,14 @@ footer {
 	grid-template-columns: repeat(2, minmax(150px, 1fr));
 	// grid-template-rows: repeat(7, minmax(50px, 100px));
 	width: 500px;
+	height: 85%;
 	margin: 50px;
 	border-radius: 10px;
 	background: transparent;
 	border: 2px solid rgba(255, 255, 255, 0.2);
 	backdrop-filter: blur(3px);
+	box-shadow: 0 0 1px black;
+
 	.icon {
 		// height: 150px;
 		font-size: 2rem;
@@ -1625,6 +1644,8 @@ footer {
 }
 .wrapper-goals {
 	font-size: 1.9rem;
+	box-shadow: 0 0 1px black;
+
 	.p-goals {
 		text-align: center;
 		margin-top: 10px;
@@ -1726,17 +1747,15 @@ footer {
 			display: grid;
 			grid-template-columns: repeat(2, minmax(150px, 1fr));
 			grid-template-rows: 100px repeat(4, 200px) 100px;
-			// grid-auto-rows: 200px;
-			// width: 100%;
+			
 			margin: 10px;
-			// gap: 5px 10px;
-			// height: auto;
-			// background-color: #333;
-			// padding: 30px 40px;
+			
 			border-radius: 10px;
 			background: transparent;
 			border: 2px solid rgba(255, 255, 255, 0.2);
 			backdrop-filter: blur(3px);
+			box-shadow: 0 0 1px black;
+
 
 			.icon {
 				display: flex;
@@ -1786,6 +1805,8 @@ footer {
 		.wrapper-login {
 			padding: 0px 10px;
 			margin: 0 2px;
+			box-shadow: 0 0 1px black;
+
 			.remember-forgot {
 				a,
 				label {

@@ -1053,6 +1053,7 @@ footer {
   justify-content: center;
   min-height: 100vh;
   background-color: #c6bcb6;
+  text-shadow: 0 0 1px black;
 }
 .login-page-bgc p {
   margin: 20px;
@@ -1067,6 +1068,7 @@ footer {
 }
 .login-page-bgc .wrapper {
   width: 450px;
+  height: 85%;
   padding: 30px 40px;
   border-radius: 10px;
   background: transparent;
@@ -1074,13 +1076,26 @@ footer {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   margin: 40px 5px;
+  box-shadow: 0 0 1px black;
 }
 .login-page-bgc .wrapper h1 {
   font-size: 5.6rem;
   text-align: center;
 }
 .login-page-bgc .wrapper .btn {
+  position: relative;
   margin-top: 40px;
+}
+.login-page-bgc .wrapper .btn a {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 45px;
+}
+.login-page-bgc .wrapper a:hover {
+  color: #399;
 }
 .login-page-bgc .wrapper .input-box {
   position: relative;
@@ -1148,12 +1163,15 @@ footer {
   grid-template-columns: repeat(2, minmax(150px, 1fr));
   grid-template-rows: repeat(7, minmax(50px, 100px));
   width: 550px;
+  height: 85%;
   margin: 10px;
   border-radius: 10px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+  box-shadow: 0 0 1px black;
+  text-shadow: 0 0 1px black;
 }
 .wrapper-start .btn {
   width: 80%;
@@ -1221,12 +1239,14 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
   width: 500px;
+  height: 85%;
   margin: 50px;
   border-radius: 10px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.2);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
+  box-shadow: 0 0 1px black;
 }
 .wrapper-challenges .icon {
   font-size: 2rem;
@@ -1263,6 +1283,7 @@ footer {
 
 .wrapper-goals {
   font-size: 1.9rem;
+  box-shadow: 0 0 1px black;
 }
 .wrapper-goals .p-goals {
   text-align: center;
@@ -1346,6 +1367,7 @@ footer {
     border: 2px solid rgba(255, 255, 255, 0.2);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
+    box-shadow: 0 0 1px black;
   }
   .login-page-bgc .wrapper-start .icon {
     display: flex;
@@ -1390,6 +1412,7 @@ footer {
   .login-page-bgc .wrapper-login {
     padding: 0px 10px;
     margin: 0 2px;
+    box-shadow: 0 0 1px black;
   }
   .login-page-bgc .wrapper-login .remember-forgot a,
   .login-page-bgc .wrapper-login .remember-forgot label {
