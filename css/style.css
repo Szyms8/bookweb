@@ -727,7 +727,7 @@ main .wrapper-revievs .friends-ratings .rating .header p {
   display: inline-block;
   font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
-  text-shadow: 0 0 1px #000;
+  color: #000;
   white-space: pre-wrap;
 }
 main .wrapper-revievs .friends-ratings .rating .picture {
