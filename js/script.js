@@ -49,7 +49,7 @@ const addNewTodo = () => {
 		todoInput.value = "";
 		errorInfo.textContent = "";
 	} else {
-		errorInfo.textContent = "Wpisz treść zadania";
+		errorInfo.textContent = "Enter a book title";
 	}
 };
 
@@ -130,9 +130,8 @@ const navbarV2 = document.getElementsByClassName("navbar-toggle2")[0];
 const navbarLinksV = document.getElementsByClassName("navbar-links");
 const scrollLBtn = document.querySelector(".scrolll");
 const scrollRBtn = document.querySelector(".scrollr");
-const cardsBtnL = document.querySelector(".scrolll-recomended-left")
-const cardsBtnR = document.querySelector(".scrollr-recomended-right")
-
+const cardsBtnL = document.querySelector(".scrolll-recomended-left");
+const cardsBtnR = document.querySelector(".scrollr-recomended-right");
 
 const functionShow = () => {
 	for (let i = 0; i < navbarLinksV.length; i++) {
@@ -141,9 +140,6 @@ const functionShow = () => {
 		navbarV2.classList.toggle("none");
 	}
 };
-
-
-
 
 function fscrollL() {
 	let left = document.querySelector(".scroll-images");
