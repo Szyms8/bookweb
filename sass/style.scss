@@ -42,8 +42,8 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 }
 
 .todo {
-	margin: 40px;
-	width: 800px;
+	margin: 20px 10px;
+	width: 95%;
 	border-radius: 5px;
 	background: #fff;
 	box-shadow: 4px 4px 5px rgba(82, 82, 82, 0.4);
@@ -73,6 +73,7 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 
 .btn-add {
 	padding: 10px 22px;
+	margin: 10px;
 	border: none;
 	border-radius: 5px;
 	color: var(--deep-dark);
@@ -104,6 +105,7 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 	padding-left: 20px;
 	text-align: left;
 	list-style: none;
+	border-radius: 5px;
 	background-color: var(--light);
 }
 
@@ -149,17 +151,17 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 	align-items: center;
 	flex-direction: column;
 	position: absolute;
-	bottom: 300px;
+	bottom: 318px;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 800px;
+	width: 90%;
 	color: var(--light);
 	background-color: var(--light-dark);
 	border-radius: 5px;
 }
 
 .popup h3 {
-	padding: 20px;
+	padding: 10px;
 }
 
 .popup-info {
@@ -185,10 +187,10 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 }
 
 .popup-btn {
-	width: 30%;
+	width: 40%;
 	display: inline-block;
-	padding: 10px 22px;
-	margin: 20px;
+	padding: 10px 12px;
+	margin: 10px;
 	border: none;
 	border-radius: 5px;
 	color: var(--deep-dark);
@@ -1639,18 +1641,6 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	// display: grid;
-	// justify-items: center;
-	// align-items: center;
-	// justify-content: center;
-	// align-content: center;
-	// height: 50%;
-	// width: 50%;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
-	// background-color: #fff;
 
 	.todo {
 		margin: 20px;
