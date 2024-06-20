@@ -460,7 +460,7 @@ main .about-us-box {
   justify-items: center;
   margin: 5px;
   margin-bottom: 40px;
-  width: 100%;
+  width: 70%;
 }
 main .about-us-box .about-us {
   position: relative;
@@ -493,14 +493,20 @@ main .about-us-box .about-us img {
 main .about-us-box .animation-1 {
   position: absolute;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   opacity: 0;
   transition: 0.55s;
-  background-image: linear-gradient(400deg, rgb(152, 220, 206) 0%, rgb(182, 210, 223) 70%);
-  color: b;
+  background-color: #b5b5b5;
+  background-color: rgba(255, 255, 255, 0.4509803922);
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+}
+main .about-us-box .animation-1 .text {
+  text-shadow: 0 0 1px black;
 }
 main .about-us-box .about-us-left:hover .animation-1 {
   transform: rotateX(-180deg);
@@ -576,7 +582,7 @@ main .bg-link {
   width: 100%;
   height: 400px;
   background-color: #fff;
-  background-image: url(../img/rptgtpxd-1396254731.avif);
+  background-image: url(../img/Book.jpeg);
   background-attachment: fixed;
   background-position: center;
 }
@@ -708,7 +714,7 @@ main .wrapper-revievs .friends-ratings .rating .header {
   background-color: rgba(15, 98, 98, 0.144);
   background-color: rgba(15, 98, 98, 0.144);
   background-color: #fff;
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.413);
   border-bottom: 2px solid rgb(233, 233, 240);
 }
 main .wrapper-revievs .friends-ratings .rating .header .img-profile {
@@ -1433,6 +1439,9 @@ footer {
   }
 }
 @media (max-width: 900px) {
+  main .about-us-box {
+    width: 90%;
+  }
   .main-category-book .arrivals .arrivals-box {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1518,6 +1527,9 @@ footer {
     align-items: start;
     height: 65%;
     border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  main .about-us-box {
+    width: 100%;
   }
   main .about-us-box .about-us {
     grid-auto-flow: row;
