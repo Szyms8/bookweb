@@ -591,6 +591,7 @@ main {
 				top: 30px;
 				// transform: translate(-50%, -50%);
 				width: 100%;
+				max-width: 670px;
 				height: auto;
 				// margin: 10px;
 				padding: 10px;
@@ -622,6 +623,7 @@ main {
 			backdrop-filter: blur(25px);
 			.text {
 				text-shadow: 0 0 1px black;
+				padding: 10px;
 			}
 		}
 
@@ -1900,7 +1902,7 @@ footer {
 		}
 		.wrapper-login {
 			padding: 0px 10px;
-			margin: 0 2px;
+			margin: 10px 5px;
 			box-shadow: 0 0 1px black;
 
 			.remember-forgot {

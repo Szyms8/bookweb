@@ -497,6 +497,7 @@ main .about-us-box .about-us .text-style {
 main .about-us-box .about-us img {
   top: 30px;
   width: 100%;
+  max-width: 670px;
   height: auto;
   padding: 10px;
 }
@@ -517,6 +518,7 @@ main .about-us-box .animation-1 {
 }
 main .about-us-box .animation-1 .text {
   text-shadow: 0 0 1px black;
+  padding: 10px;
 }
 main .about-us-box .about-us-left:hover .animation-1 {
   transform: rotateX(-180deg);
@@ -1466,7 +1468,7 @@ footer {
   }
   .login-page-bgc .wrapper-login {
     padding: 0px 10px;
-    margin: 0 2px;
+    margin: 10px 5px;
     box-shadow: 0 0 1px black;
   }
   .login-page-bgc .wrapper-login .remember-forgot a,
