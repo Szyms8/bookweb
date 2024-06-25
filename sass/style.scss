@@ -235,6 +235,7 @@ html {
 	font-size: 62.5%;
 	font-weight: 300;
 	scroll-behavior: smooth;
+	scroll-padding: 50px;
 	color: #fff;
 	color: wheat;
 	.output-api {
@@ -515,6 +516,16 @@ select {
 	visibility: hidden;
 }
 
+.your-class {
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+	img {
+		width: 300px;
+	}
+}
+
+
+
 main {
 	// width: 85%;
 	background-color: #c6bcb6;
@@ -524,6 +535,10 @@ main {
 	background-color: #e0e2e4;
 	// box-shadow: 0px 1px 5px black;
 	// color: #000;
+
+	
+
+	
 
 	// ABOUT USSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 
@@ -591,7 +606,7 @@ main {
 				top: 30px;
 				// transform: translate(-50%, -50%);
 				width: 100%;
-				max-width: 670px;
+				max-width: 800px;
 				height: auto;
 				// margin: 10px;
 				padding: 10px;
@@ -793,6 +808,8 @@ main {
 		.cover {
 			position: relative;
 			width: 90%;
+			max-width: 1000px;
+
 			height: 50%;
 			.scroll-images {
 				position: relative;
@@ -869,6 +886,7 @@ main {
 			margin: 10px;
 			// height: 200vh;
 			width: 90%;
+			max-width: 900px;
 			// background-color: #fff2e1;
 			// border: 2px solid black;
 			.rating {
@@ -1280,6 +1298,48 @@ main {
 }
 
 section {
+
+	// .reviews {
+	// 	.reviews-box {
+	// 		position: relative;
+	// 		margin: 2em;
+	// 		padding: 2em;
+	// 		border-radius: 8px;
+	// 		box-shadow: 3px 3px 10px #2e2e2e2e;
+	// 		cursor: pointer;
+	// 		transition: transform 0.3s;
+	
+	// 		&:hover {
+	// 			transform: scale(0.9);
+	// 		}
+	// 	}
+	
+	// 	 .reviews-box-img{
+	// 		position: absolute;
+	// 		top: 8%;
+	// 		left: 75%;
+	// 		transform: translate(-50%, -50%);
+	
+	// 		img {
+	// 			width: 80px;
+	// 			height: 80px;
+	// 			object-fit: cover;
+	// 			border-radius: 50%;
+	// 		}
+	// 	}
+	// 	.reviews-box-quote {
+	// 		margin-bottom: 1em;
+	// 		font-size: 3rem;
+	// 		color: $main-color;
+	// 	}
+	
+	// 	.reviews-box-text {
+	// 		margin-bottom: 1em;
+	// 		font-size: 1.4rem;
+	// 		color: $dark;
+	// 	}
+	// }
+
 	// .contact-container {
 	// 	z-index: 101;
 	// // }
@@ -1412,6 +1472,7 @@ footer {
 	background-color: #323232;
 	background-color: #625750;
 	background-color: #96897f;
+	text-shadow: 0 0 1px #000;
 }
 
 // .btn {

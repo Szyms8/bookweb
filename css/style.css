@@ -200,6 +200,7 @@ html {
   font-size: 62.5%;
   font-weight: 300;
   scroll-behavior: smooth;
+  scroll-padding: 50px;
   color: #fff;
   color: wheat;
 }
@@ -439,6 +440,14 @@ select {
   visibility: hidden;
 }
 
+.your-class {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.your-class img {
+  width: 300px;
+}
+
 main {
   background-color: #c6bcb6;
   background-color: #fff;
@@ -497,7 +506,7 @@ main .about-us-box .about-us .text-style {
 main .about-us-box .about-us img {
   top: 30px;
   width: 100%;
-  max-width: 670px;
+  max-width: 800px;
   height: auto;
   padding: 10px;
 }
@@ -645,6 +654,7 @@ main .main-scroll-div .icon:hover {
 main .main-scroll-div .cover {
   position: relative;
   width: 90%;
+  max-width: 1000px;
   height: 50%;
 }
 main .main-scroll-div .cover .scroll-images {
@@ -705,6 +715,7 @@ main .wrapper-revievs .friends-ratings {
   align-items: center;
   margin: 10px;
   width: 90%;
+  max-width: 900px;
 }
 main .wrapper-revievs .friends-ratings .rating {
   margin: 20px;
@@ -1103,6 +1114,7 @@ footer {
   background-color: #323232;
   background-color: #625750;
   background-color: #96897f;
+  text-shadow: 0 0 1px #000;
 }
 
 .login-page-bgc {
