@@ -37,6 +37,14 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 // 	margin: 10px;
 // }
 
+.none {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
 .fas {
 	pointer-events: none;
 }
@@ -270,6 +278,10 @@ select {
 // 		z-index: 10;
 // }
 
+.none {
+	display: none;
+}
+
 .centered {
 	position: absolute;
 	top: 50%;
@@ -402,6 +414,7 @@ select {
 
 		// display: inline-block;
 	}
+	
 	.child {
 		position: absolute;
 		// display: inline-block;
@@ -459,6 +472,7 @@ select {
 				transition: 0.3s;
 				text-transform: uppercase;
 				letter-spacing: 1px;
+				
 			}
 		}
 	}
@@ -472,6 +486,7 @@ select {
 	display: none;
 	font-size: 1.8rem;
 	transition: 0.3s;
+	z-index: 2000;
 }
 .navbar-toggle2 {
 	display: none;
@@ -2129,6 +2144,7 @@ footer {
 				transform: scale(1.1);
 				transition: 0.3s;
 			}
+			
 		}
 		.parent:hover .child {
 			display: inline-block;

@@ -12,6 +12,14 @@
   --light: rgb(245, 245, 245);
 }
 
+.none {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .fas {
   pointer-events: none;
 }
@@ -226,6 +234,10 @@ select {
   font-family: inherit;
 }
 
+.none {
+  display: none;
+}
+
 .centered {
   position: absolute;
   top: 50%;
@@ -401,6 +413,7 @@ select {
   display: none;
   font-size: 1.8rem;
   transition: 0.3s;
+  z-index: 2000;
 }
 
 .navbar-toggle2 {
