@@ -1,8 +1,6 @@
-
-
-
 // const navbarV = document.getElementsByClassName("navbar-toggle");
 const navbarV = document.querySelector(".navbar-toggle");
+const menu = document.querySelector(".navbar");
 // const navbarV = document.querySelector(".navbar-toggle");
 const navI = document.querySelector(".fa-bars");
 const navbarV2 = document.querySelector(".navbar-toggle2");
@@ -23,15 +21,7 @@ const navMenu = document.querySelector(".nav-menuu");
 // 		navbarV2.classList.toggle(".none");
 // 	}
 
-	// const functionClose = () => {
-	// 	for (let i = 0; i < navbarLinksV.length; i++) {
-	// 		navbarLinksV[i].classList.remove("active");
-	// 		// navbarV.classList.toggle("none");
-	// 		// navbarV2.classList.toggle("none");
-	// 	}
-	// };
-// 	// navbarLinksV.addEventListener("click", functionClose);
-// };
+
 
 // navbarV.addEventListener("click", () => {
 // 	navbarLinksV.classList.toggle("active")
@@ -43,7 +33,18 @@ const navMenu = document.querySelector(".nav-menuu");
 
 // }))
 
+// document.addEventListener("click", e => {
+// 	if(!menu.contains(e.target)) {
+// 		menu.classList.remove("active")
+// 	}
+// })
 
+const functionClose = () => {
+	for (let i = 0; i < navbarLinksV.length; i++) {
+		navbarLinksV[i].classList.remove("active");
+		
+	}
+};
 
 function fShow() {
 	for (let i = 0; i < navbarLinksV.length; i++) {
@@ -61,10 +62,25 @@ function fShow() {
 function fClose() {
 	for (let i = 0; i < navbarLinksV.length; i++) {
 		navbarLinksV[i].classList.toggle("active");
-		}
-		navI.classList.toggle("none");
-		navbarV2.classList.toggle("none");
+	}
+	navI.classList.toggle("none");
+	navbarV2.classList.toggle("none");
 }
+
+// if (navbarLinksV.contains("active")){
+
+// }
+
+// function fClose2() {
+// 	function fClose3() {
+// 		for (let i = 0; i < navbarLinksV.length; i++) {
+// 			navbarLinksV[i].classList.toggle("active");
+// 		}
+// 		navI.classList.toggle("none");
+// 		navbarV2.classList.toggle("none");
+// 	}
+// 	navbarLinksV.addEventListener("click", fClose3);
+// }
 
 function fscrollL() {
 	let left = document.querySelector(".scroll-images");
@@ -94,6 +110,8 @@ cardsBtnL.addEventListener("click", fscrollLCardsL);
 cardsBtnR.addEventListener("click", fscrollLCardsR);
 navbarV.addEventListener("click", fShow);
 navbarV2.addEventListener("click", fClose);
+// navMenu.addEventListener("click", fClose2);
 // navI.addEventListener("click", fClose);
-// navbarLinksV.addEventListener("click", functionCloseNav)
+// navbarLinksV.addEventListener("click", functionCloseNav);
+navbarLinksV.addEventListener("click", functionClose);
 
