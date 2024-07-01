@@ -1,3 +1,5 @@
+
+
 // const navbarV = document.getElementsByClassName("navbar-toggle");
 const navbarV = document.querySelector(".navbar-toggle");
 const menu = document.querySelector(".navbar");
@@ -5,10 +7,7 @@ const menu = document.querySelector(".navbar");
 const navI = document.querySelector(".fa-bars");
 const navbarV2 = document.querySelector(".navbar-toggle2");
 // const navbarLinksV = document.getElementsByClassName("navbar-links");
-// const navbarLinksV = document.getElementsByTagName("li");
-const navbarLinksV = document.querySelectorAll(".navbar-links	");
-// const navbarLinksV3 = navbarLinksV.querySelectorAll(".navbar-links")
-// const navbarLinksV2 = document.getElementsById(".navbar-links");
+const navbarLinksV = document.querySelectorAll(".navbar-links");
 const scrollLBtn = document.querySelector(".scrolll");
 const scrollRBtn = document.querySelector(".scrollr");
 const cardsBtnL = document.querySelector(".scrolll-recomended-left");
@@ -23,6 +22,8 @@ const navMenu = document.querySelector(".nav-menuu");
 // 		navbarV.classList.toggle(".none");
 // 		navbarV2.classList.toggle(".none");
 // 	}
+
+
 
 // navbarV.addEventListener("click", () => {
 // 	navbarLinksV.classList.toggle("active")
@@ -42,20 +43,17 @@ const navMenu = document.querySelector(".nav-menuu");
 
 const functionClose = () => {
 	for (let i = 0; i < navbarLinksV.length; i++) {
-		navbarLinksV[i].classList.toggle("active");
-		// navI.classList.remove("none");
-		// navbarV2.classList.remove("none");
+		navbarLinksV[i].classList.remove("active");
+		
 	}
 };
-
-// const functionClose3
 
 function fShow() {
 	for (let i = 0; i < navbarLinksV.length; i++) {
 		navbarLinksV[i].classList.toggle("active");
 	}
-	// navI.classList.toggle("none");
-	// navbarV2.classList.toggle("none");
+	navI.classList.toggle("none");
+	navbarV2.classList.toggle("none");
 	// navbarLinksV.classList.toggle("active")
 
 	// navbarV.addEventListener("click", () => {
@@ -67,8 +65,8 @@ function fClose() {
 	for (let i = 0; i < navbarLinksV.length; i++) {
 		navbarLinksV[i].classList.toggle("active");
 	}
-	// navI.classList.toggle("none");
-	// navbarV2.classList.toggle("none");
+	navI.classList.toggle("none");
+	navbarV2.classList.toggle("none");
 }
 
 // if (navbarLinksV.contains("active")){
@@ -108,13 +106,14 @@ function fscrollLCardsR() {
 
 // navbarV.addEventListener("click", functionShow);
 // navbarV2.addEventListener("click", functionShow);
-scrollLBtn.addEventListener("click", fscrollL);
-scrollRBtn.addEventListener("click", fscrollR);
-cardsBtnL.addEventListener("click", fscrollLCardsL);
-cardsBtnR.addEventListener("click", fscrollLCardsR);
+// scrollLBtn.addEventListener("click", fscrollL);
+// scrollRBtn.addEventListener("click", fscrollR);
+// cardsBtnL.addEventListener("click", fscrollLCardsL);
+// cardsBtnR.addEventListener("click", fscrollLCardsR);
 navbarV.addEventListener("click", fShow);
 navbarV2.addEventListener("click", fClose);
 // navMenu.addEventListener("click", fClose2);
 // navI.addEventListener("click", fClose);
+// navbarLinksV.addEventListener("click", functionCloseNav);
 // navbarLinksV.addEventListener("click", functionClose);
-navbarLinksV.forEach((x) => x.addEventListener("click", functionClose));
+
