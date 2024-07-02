@@ -42,7 +42,7 @@ const navMenu = document.querySelector(".nav-menuu");
 
 const functionClose = () => {
 	for (let i = 0; i < navbarLinksV.length; i++) {
-		navbarLinksV[i].classList.toggle("active");
+		navbarLinksV[i].classList.remove("active");
 		// navI.classList.remove("none");
 		// navbarV2.classList.remove("none");
 	}
@@ -53,15 +53,10 @@ const functionClose = () => {
 function fShow() {
 	for (let i = 0; i < navbarLinksV.length; i++) {
 		navbarLinksV[i].classList.toggle("active");
-	}
-	// navI.classList.toggle("none");
-	// navbarV2.classList.toggle("none");
-	// navbarLinksV.classList.toggle("active")
-
-	// navbarV.addEventListener("click", () => {
-	// 	navbarLinksV.classList.toggle("active")
-	// 	// navMenu.classList.toggle("active")
-	// })
+		}
+		// navI.classList.toggle("none");
+		// navbarV2.classList.toggle("none");
+	
 }
 function fClose() {
 	for (let i = 0; i < navbarLinksV.length; i++) {
