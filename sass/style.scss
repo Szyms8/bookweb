@@ -1,3 +1,4 @@
+@import "animation";
 $nav-color: #96897f;
 $bg-shadow: rgba(0, 0, 0, 0.326);
 
@@ -414,7 +415,7 @@ select {
 
 		// display: inline-block;
 	}
-	
+
 	.child {
 		position: absolute;
 		// display: inline-block;
@@ -472,7 +473,6 @@ select {
 				transition: 0.3s;
 				text-transform: uppercase;
 				letter-spacing: 1px;
-				
 			}
 		}
 	}
@@ -539,8 +539,6 @@ select {
 	}
 }
 
-
-
 main {
 	// width: 85%;
 	background-color: #c6bcb6;
@@ -550,10 +548,6 @@ main {
 	background-color: #e0e2e4;
 	// box-shadow: 0px 1px 5px black;
 	// color: #000;
-
-	
-
-	
 
 	// ABOUT USSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 
@@ -723,6 +717,11 @@ main {
 					font-size: 4.8rem;
 					// font-family: "Playwrite FR Moderne", cursive;
 					font-family: "Playwrite AU SA", cursive;
+				}
+				i {
+					padding-top: 20px;
+					padding-bottom: 5px;
+					font-size: 3.8rem;
 				}
 			}
 		}
@@ -902,8 +901,29 @@ main {
 			// height: 200vh;
 			width: 90%;
 			max-width: 900px;
-			// background-color: #fff2e1;
-			// border: 2px solid black;
+			.btn-book {
+				margin: 20px;
+				padding: 10px;
+				border-radius: 4px;
+				border: 2px solid rgba(245, 245, 245, 0.372);
+				box-shadow: 0 0 1px black;
+				background: transparent;
+				color: wheat;
+				text-shadow: 0 0 1px black;
+				font-size: 2.1rem;
+				font-family: Arial, Helvetica, sans-serif;
+				transition: 0.3s;
+				cursor: pointer;
+				a {
+				}
+			}
+			.btn-book:hover a {
+				color: rgb(116, 187, 187);
+				transform: scale(1.1);
+			}
+			.btn-book:hover {
+				transform: scale(1.1);
+			}
 			.rating {
 				margin: 20px;
 				// height: 300px;
@@ -1313,7 +1333,6 @@ main {
 }
 
 section {
-
 	// .reviews {
 	// 	.reviews-box {
 	// 		position: relative;
@@ -1323,18 +1342,18 @@ section {
 	// 		box-shadow: 3px 3px 10px #2e2e2e2e;
 	// 		cursor: pointer;
 	// 		transition: transform 0.3s;
-	
+
 	// 		&:hover {
 	// 			transform: scale(0.9);
 	// 		}
 	// 	}
-	
+
 	// 	 .reviews-box-img{
 	// 		position: absolute;
 	// 		top: 8%;
 	// 		left: 75%;
 	// 		transform: translate(-50%, -50%);
-	
+
 	// 		img {
 	// 			width: 80px;
 	// 			height: 80px;
@@ -1347,7 +1366,7 @@ section {
 	// 		font-size: 3rem;
 	// 		color: $main-color;
 	// 	}
-	
+
 	// 	.reviews-box-text {
 	// 		margin-bottom: 1em;
 	// 		font-size: 1.4rem;
@@ -2144,7 +2163,6 @@ footer {
 				transform: scale(1.1);
 				transition: 0.3s;
 			}
-			
 		}
 		.parent:hover .child {
 			display: inline-block;
