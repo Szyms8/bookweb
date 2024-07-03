@@ -462,7 +462,7 @@ select {
 		background-color: #96897f;
 
 		li {
-			padding: .8rem;
+			padding: 0.8rem;
 			// list-style-type: none;
 			a {
 				padding: 4px;
@@ -732,6 +732,8 @@ main {
 	.reviev-page-big {
 		display: grid;
 		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
 		width: 90%;
 		// height: 800px;
 		// margin: 10px;
@@ -746,7 +748,107 @@ main {
 			font-family: Arial, Helvetica, sans-serif;
 			font-size: 2rem;
 			color: #000;
+			// color: wheat;
+			// text-shadow: 0 0 1px black;
 			margin: 15px;
+			.button {
+				position: relative;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				padding: 10px;
+				padding-top: 5px;
+				border-radius: 4px;
+				border: 2px solid rgba(245, 245, 245, 0.372);
+				box-shadow: 0 0 1px black;
+				background: transparent;
+				// text-shadow: 0 0 1px black;
+				font-size: 2rem;
+				font-family: Arial, Helvetica, sans-serif;
+				transition: 0.3s;
+				cursor: pointer;
+				span {
+					color: black;
+				}
+
+				// .text {
+				// 	margin-right: 15px;
+				// }
+				
+				img {
+					position: relative;
+					top: 4px;
+				}
+				.tooltip {
+					position: relative;
+				}
+				// .tooltip::before, .tooltip::after {
+				// 	position: absolute;
+				// 	content: "qflnqvengkne";
+				// 	transition: .3 ease;
+				// }
+				.tooltip::before {
+					position: absolute;
+					border-radius: 5px;
+					right: 20px;
+					padding: 20px;
+					content: "Walter Isaacson was born on 20 May, 1958....";
+					bottom: 55px;
+					// left: 250px;
+					// border: 1px solid black;
+					transition: 0.5 ease;
+					background-color: whitesmoke;
+					// opacity: 0;
+					display: none;
+					z-index: 1;
+					width: 200px;
+				}
+				.tooltip::after {
+					position: absolute;
+					content: "";
+					top: -25px;
+					right: 200px;
+					// width: 30px;
+					// height: 30px;
+					// background-color: red;
+					border-top: 20px solid rgba(245, 245, 245, 0.372);
+					border-right: 10px solid #e0e2e4;
+					border-left: 10px solid #e0e2e4;
+					display: none;
+					
+
+					// padding: 10px;
+
+					transition: 0.5 ease;
+					background-color: whitesmoke;
+					// opacity: 0;
+					// display: none;
+				}
+			}
+			.border-none {
+				border: none;
+				box-shadow: none;
+			}
+			.button:hover .tooltip::before {
+				// opacity: 1;
+				display: block;
+				transform: scale(1.2);
+			}
+
+			.button:hover .tooltip::after {
+				display: block;
+				transform: scale(1.1);
+			}
+			// button:hover a {
+			// 	// color: rgb(116, 187, 187);
+			// 	transform: scale(1.1);
+			// }
+			// button:hover {
+			// 	transform: scale(0.95);
+			// }
+			// .text {
+			// 	color: #000;
+			// 	text-shadow: none;
+			// }
 		}
 		h4 {
 			margin-top: 5px;
@@ -754,7 +856,7 @@ main {
 		.musk-paragraph {
 			background-color: #c6bcb6;
 			margin: 15px;
-			padding: 20px;
+			padding: 10px;
 			h1 {
 				font-size: 3rem;
 			}
@@ -791,7 +893,7 @@ main {
 			cursor: pointer;
 		}
 		.btn-book:hover {
-			color: #399;
+			// color: #399;
 			transform: scale(1.1);
 		}
 	}
@@ -914,16 +1016,32 @@ main {
 				font-family: Arial, Helvetica, sans-serif;
 				transition: 0.3s;
 				cursor: pointer;
-				a {
-				}
+
+				// a {
+				// }
 			}
+			// @keyframes pulse {
+			// 	from {
+			// 		transform: scale(1);
+			// 		opacity: .5;
+			// 	}
+
+			// 	to {
+			// 		transform: scale(4);
+			// 		opacity: 0;
+			// 	}
+			// }
+
 			.btn-book:hover a {
-				color: rgb(116, 187, 187);
+				// color: rgb(116, 187, 187);
 				transform: scale(1.1);
 			}
 			.btn-book:hover {
 				transform: scale(1.1);
 			}
+			// .pulse:hover::before {
+			// 	animation: pulse 1s;
+			// }
 			.rating {
 				margin: 20px;
 				// height: 300px;
@@ -1052,7 +1170,6 @@ main {
 	// }
 
 	// HOMEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-	
 
 	.p-recent {
 		display: inline-block;
@@ -2096,6 +2213,30 @@ footer {
 				scrollbar-width: none; /* Firefox */
 			}
 		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.navbar ul {
+		flex-wrap: wrap;
+	}
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-toggle2 {
+		display: block;
+	}
+	.navbar-links {
+		display: none;
+		width: 100%;
+		text-align: center;
+	}
+	.active {
+		display: block;
+	}
+
+	.none {
+		display: none;
 	}
 }
 
