@@ -1126,6 +1126,10 @@ main .p-margin {
   border: 1px solid black;
   margin: auto;
 }
+.main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-icon {
+  margin: 10px;
+  margin-bottom: 20px;
+}
 .main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-tag .arrivals-btn {
   box-shadow: 1px 1px 3px #625750;
   border-radius: 2px;

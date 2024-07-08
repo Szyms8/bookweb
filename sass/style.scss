@@ -1323,6 +1323,13 @@ main {
 				padding: 5px;
 				border: 1px solid black;
 				margin: auto;
+				.arrivals-icon {
+					margin: 10px;
+					margin-bottom: 20px;
+					.star {
+						// margin: 5px;
+					}
+				}
 				.arrivals-tag {
 					.arrivals-btn {
 						box-shadow: 1px 1px 3px #625750;
