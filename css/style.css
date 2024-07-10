@@ -1078,7 +1078,19 @@ main .recent .cards .card-b {
   background-image: url("../img/goodfather.jpeg");
 }
 main .recent .cards .card-c {
-  background-image: url("../img/sapiens-czesc-1-narodziny-ludzkosci-opowiesc-graficzna-w-iext120978306.jpeg");
+  background-image: url("../img/sapiens.jpg");
+}
+main .recent .cards .card-d {
+  background-image: url("../img/homo-deus-b-iext156964973.jpg");
+}
+main .recent .cards .card-e {
+  background-image: url("../img/21l.jpg");
+}
+main .recent .cards .card-f {
+  background-image: url("../img/diuna-t-1.webp");
+}
+main .recent .cards .card-g {
+  background-image: url("../img/Harry-Potter-and-the-Prisoner-of-Azkaban-Harry-Potter-Book-3-MinaLima.jpeg");
 }
 main .recent .cards:hover {
   transform: scale(1.1);
