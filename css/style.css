@@ -844,7 +844,7 @@ main .main-scroll-div .cover .scroll-images .child .bgc {
   position: absolute;
   bottom: 170px;
 }
-main .main-scroll-div .cover .scroll-images .child .bgc p {
+main .main-scroll-div .cover .scroll-images .child .bgc a p {
   width: 299px;
   padding: 10px;
   text-align: center;
@@ -1002,8 +1002,10 @@ main .wrapper-revievs .friends-ratings .rating .comment {
   border-top: 2px solid rgba(255, 255, 255, 0.444);
   background-color: #e0e2e4;
 }
-main .wrapper-revievs .friends-ratings .rating .comment img {
+main .wrapper-revievs .friends-ratings .rating .comment i {
   margin: 5px;
+  color: #000;
+  font-size: 2rem;
 }
 main .p-recent {
   display: inline-block;
@@ -1141,7 +1143,7 @@ main .p-margin {
 }
 .main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-image {
   width: 150px;
-  height: 215px;
+  height: 210px;
   margin: 0 auto;
   margin-bottom: 5px;
   cursor: pointer;
