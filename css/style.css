@@ -882,10 +882,16 @@ main .wrapper-revievs .friends-ratings {
   width: 90%;
   max-width: 900px;
 }
-main .wrapper-revievs .friends-ratings .btn-book {
+main .wrapper-revievs .friends-ratings a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main .wrapper-revievs .friends-ratings a .btn-container {
   margin: 20px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 8px;
   border: 2px solid rgba(245, 245, 245, 0.372);
   box-shadow: 0 0 1px black;
   background: transparent;
@@ -896,11 +902,26 @@ main .wrapper-revievs .friends-ratings .btn-book {
   transition: 0.3s;
   cursor: pointer;
 }
-main .wrapper-revievs .friends-ratings .btn-book:hover a {
-  transform: scale(1.1);
+main .wrapper-revievs .friends-ratings a .btn-container-animation {
+  animation: animate 1.5s linear infinite;
+  animation-direction: alternate;
+  color: whitesmoke;
 }
-main .wrapper-revievs .friends-ratings .btn-book:hover {
-  transform: scale(1.1);
+@keyframes animate {
+  from {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+main .wrapper-revievs .friends-ratings .btn-container:hover a {
+  transform: scale(1.03);
+}
+main .wrapper-revievs .friends-ratings .btn-container:hover {
+  transform: scale(1.03);
 }
 main .wrapper-revievs .friends-ratings .rating {
   margin: 20px;
