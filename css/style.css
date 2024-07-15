@@ -285,6 +285,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding: 50px;
   color: #fff;
+  color: rgb(247, 207, 131);
+  color: rgb(254, 218, 152);
   color: wheat;
 }
 html .output-api h2 {
@@ -335,19 +337,19 @@ select {
 
 .register-link {
   text-align: center;
-  margin: 10px 0px;
+  margin: 2px 0px;
 }
 .register-link p {
   padding: 10px;
 }
 .register-link a {
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.1rem;
   line-height: 1px;
 }
 .register-link a:hover {
   color: #399;
-  font-size: 2.1rem;
+  font-size: 2.2rem;
 }
 
 .btn {
@@ -542,6 +544,9 @@ main {
   background-color: #c6bcb6;
   background-color: #fff2e1;
   background-color: #e0e2e4;
+  background-color: #c0c1c2;
+  background-color: #d3d4d5;
+  background-color: #bdbec0;
 }
 main .p-and-line-container {
   width: 100%;
@@ -901,6 +906,7 @@ main .wrapper-revievs .friends-ratings a .btn-container {
   font-family: Arial, Helvetica, sans-serif;
   transition: 0.3s;
   text-align: center;
+  text-shadow: 0px 0px 1.8px black;
   cursor: pointer;
 }
 main .wrapper-revievs .friends-ratings a .btn-container-animation {
@@ -911,11 +917,9 @@ main .wrapper-revievs .friends-ratings a .btn-container-animation {
 @keyframes animate {
   from {
     transform: scale(1);
-    opacity: 0.7;
   }
   to {
     transform: scale(1.1);
-    opacity: 1;
   }
 }
 main .wrapper-revievs .friends-ratings .btn-container:hover a {
@@ -1172,7 +1176,7 @@ main .p-margin {
   padding: 8px;
 }
 .main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-tag a.arrivals-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.03);
   box-shadow: 1px 1px 5px black;
 }
 .main-category-book .arrivals .arrivals-box .arrivals-card .arrivals-image {
@@ -1192,7 +1196,7 @@ main .p-margin {
   transition: 0.3s;
 }
 .main-category-book .arrivals .arrivals-box .arrivals-card:hover .arrivals-image img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .main-category-book .arrivals .arrivals-box .arrivals-card:hover {
   box-shadow: 0 0 2px black;
@@ -1347,6 +1351,7 @@ footer {
   justify-content: center;
   min-height: 100vh;
   background-color: #c6bcb6;
+  background-color: #bdbec0;
   text-shadow: 0 0 1px black;
 }
 .login-page-bgc p {
@@ -1387,6 +1392,7 @@ footer {
   right: 0;
   bottom: 0;
   line-height: 45px;
+  text-shadow: 0 0 1px black;
 }
 .login-page-bgc .wrapper a:hover {
   color: #399;
@@ -1426,7 +1432,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   line-height: 1px;
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin: 10px 5px;
 }
 .login-page-bgc .wrapper .remember-forgot label input {
@@ -1437,7 +1443,7 @@ footer {
   padding: 0px 10px;
 }
 .login-page-bgc .wrapper .remember-forgot a:hover {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   color: #399;
   line-height: 1px;
 }
@@ -1447,6 +1453,7 @@ footer {
   justify-content: center;
   min-height: 100vh;
   background-color: #c6bcb6;
+  background-color: #bdbec0;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -1469,9 +1476,12 @@ footer {
 }
 .wrapper-start .btn {
   width: 80%;
+  color: wheat;
+  text-shadow: 0 0 1px black;
 }
 .wrapper-start a {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
+  padding: 10px;
 }
 .wrapper-start p {
   margin-top: 0;
@@ -1542,6 +1552,19 @@ footer {
           backdrop-filter: blur(3px);
   box-shadow: 0 0 1px black;
 }
+.wrapper-challenges p {
+  font-size: 2.4rem;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.wrapper-challenges a {
+  font-size: 2.4rem;
+}
+.wrapper-challenges .btn {
+  width: 80%;
+  color: wheat;
+  text-shadow: 0 0 1px black;
+}
 .wrapper-challenges .icon {
   font-size: 2rem;
   margin: 5px 10px;
@@ -1576,7 +1599,7 @@ footer {
 }
 
 .wrapper-goals {
-  font-size: 1.9rem;
+  font-size: 2.4rem;
   box-shadow: 0 0 1px black;
 }
 .wrapper-goals .p-goals {
@@ -1715,6 +1738,9 @@ footer {
   .login-page-bgc .wrapper-login .remember-forgot a:hover {
     font-size: 1.6rem;
     color: #399;
+  }
+  .login-page-bgc .wrapper-login .register-link p a {
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 580px) {
