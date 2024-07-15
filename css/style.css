@@ -1376,6 +1376,7 @@ footer {
           backdrop-filter: blur(3px);
   margin: 40px 5px;
   box-shadow: 0 0 1px black;
+  background-color: rgba(0, 0, 0, 0.131);
 }
 .login-page-bgc .wrapper h1 {
   font-size: 5.6rem;

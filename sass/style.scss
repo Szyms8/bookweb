@@ -1732,6 +1732,7 @@ footer {
 		width: 85%;
 		height: calc(100% - 700px);
 		// background-color: #00000071;
+
 		border-radius: 10px;
 	}
 	.wrapper {
@@ -1744,6 +1745,8 @@ footer {
 		backdrop-filter: blur(3px);
 		margin: 40px 5px;
 		box-shadow: 0 0 1px black;
+		background-color: rgba(0, 0, 0, 0.131);
+
 
 		h1 {
 			font-size: 5.6rem;
@@ -2202,6 +2205,7 @@ footer {
 			padding: 0px 10px;
 			margin: 10px 5px;
 			box-shadow: 0 0 1px black;
+
 
 			.remember-forgot {
 				a,
