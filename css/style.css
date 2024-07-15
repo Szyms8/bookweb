@@ -1474,6 +1474,7 @@ footer {
           backdrop-filter: blur(3px);
   box-shadow: 0 0 1px black;
   text-shadow: 0 0 1px black;
+  background-color: rgba(0, 0, 0, 0.131);
 }
 .wrapper-start .btn {
   width: 80%;
@@ -1552,6 +1553,7 @@ footer {
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
   box-shadow: 0 0 1px black;
+  background-color: rgba(0, 0, 0, 0.131);
 }
 .wrapper-challenges p {
   font-size: 2.4rem;
