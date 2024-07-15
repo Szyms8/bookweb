@@ -723,6 +723,8 @@ main {
 					font-size: 4.8rem;
 					// font-family: "Playwrite FR Moderne", cursive;
 					font-family: "Playwrite AU SA", cursive;
+					// font-family: Arial, Helvetica, sans-serif;
+
 				}
 				i {
 					padding-top: 20px;
@@ -1711,8 +1713,8 @@ footer {
 	min-height: 100vh;
 	background-color: #c6bcb6;
 	background-color: #bdbec0;
-
 	text-shadow: 0 0 1px black;
+	// font-weight: 900;
 	// background: url("../img/books-4812032_1920.jpg");
 	// background-attachment: fixed;
 	// background-position: center;
@@ -1720,6 +1722,8 @@ footer {
 	// background-repeat: repeat-y;
 	p {
 		margin: 20px;
+		// font-family: Arial, Helvetica, sans-serif;
+
 	}
 	.login-page-shadow {
 		position: absolute;
@@ -2202,11 +2206,11 @@ footer {
 			.remember-forgot {
 				a,
 				label {
-					font-size: 1.6rem;
+					font-size: 2.0rem;
 				}
 
 				a:hover {
-					font-size: 1.6rem;
+					font-size: 2.1rem;
 					color: #399;
 				}
 			}
