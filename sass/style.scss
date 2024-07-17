@@ -324,21 +324,11 @@ select {
 	margin: 2px 0px;
 	p {
 		padding: 10px;
-		font-size: 2.1rem;
-		font-family: "Roboto", sans-serif;
-		font-weight: 400;
-
-
-
 	}
 	a {
-		// font-weight: 900;
+		font-weight: 700;
 		font-size: 2.1rem;
 		line-height: 1px;
-		font-family: "Roboto", sans-serif;
-		font-weight: bold;
-
-
 	}
 	a:hover {
 		color: #399;
@@ -1850,25 +1840,13 @@ footer {
 			font-size: 2rem;
 			margin: 10px 5px;
 			label {
-				font-family: "Roboto", sans-serif;
-				font-size: 1.6rem;
-				font-weight: bold;
-
 				input {
 					accent-color: #fff;
 					margin-right: 0.3rem;
-					font-family: "Roboto", sans-serif;
-
 				}
 			}
 			a {
 				padding: 0px 10px;
-				font-family: "Roboto", sans-serif;
-				font-size: 1.6rem;
-				font-weight: bold;
-
-
-
 				// font-family:Verdana, Geneva, Tahoma, sans-serif
 			}
 			a:hover {
@@ -2259,9 +2237,7 @@ footer {
 			.remember-forgot {
 				a,
 				label {
-					font-size: 1.6rem;
-					font-family: "Roboto", sans-serif;
-
+					font-size: 2.0rem;
 				}
 
 				a:hover {
@@ -2271,14 +2247,8 @@ footer {
 			}
 			.register-link {
 				p {
-					font-family: "Roboto", sans-serif;
-					// font-size: 2.4rem;
-
 					a {
-						font-family: "Roboto", sans-serif;
-						// font-size: 2.4rem;
-
-
+						font-size: 2.4rem;
 					}
 				}
 			}

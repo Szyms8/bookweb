@@ -351,15 +351,11 @@ select {
 }
 .register-link p {
   padding: 10px;
-  font-size: 2.1rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
 }
 .register-link a {
+  font-weight: 700;
   font-size: 2.1rem;
   line-height: 1px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
 }
 .register-link a:hover {
   color: #399;
@@ -1453,21 +1449,12 @@ footer {
   font-size: 2rem;
   margin: 10px 5px;
 }
-.login-page-bgc .wrapper .remember-forgot label {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  font-weight: bold;
-}
 .login-page-bgc .wrapper .remember-forgot label input {
   accent-color: #fff;
   margin-right: 0.3rem;
-  font-family: "Roboto", sans-serif;
 }
 .login-page-bgc .wrapper .remember-forgot a {
   padding: 0px 10px;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.6rem;
-  font-weight: bold;
 }
 .login-page-bgc .wrapper .remember-forgot a:hover {
   font-size: 2.1rem;
@@ -1763,18 +1750,14 @@ footer {
   }
   .login-page-bgc .wrapper-login .remember-forgot a,
   .login-page-bgc .wrapper-login .remember-forgot label {
-    font-size: 1.6rem;
-    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
   }
   .login-page-bgc .wrapper-login .remember-forgot a:hover {
     font-size: 2.1rem;
     color: #399;
   }
-  .login-page-bgc .wrapper-login .register-link p {
-    font-family: "Roboto", sans-serif;
-  }
   .login-page-bgc .wrapper-login .register-link p a {
-    font-family: "Roboto", sans-serif;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 580px) {
