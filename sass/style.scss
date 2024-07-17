@@ -31,12 +31,14 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 // 	margin-bottom: 20px;
 // 	text-transform: uppercase;
 // }
-// .box-todilist {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	margin: 10px;
-// }
+.box-todilist {
+	h1,
+	h3,
+	.error-info {
+		font-family: "Roboto", sans-serif;
+		font-weight: normal;
+	}
+}
 
 .none {
 	display: none;
@@ -86,7 +88,6 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 	// color: var(--dark-blue);
 	color: #399;
 	font-size: 2.1rem;
-
 }
 li {
 	font-size: 2.1rem;
@@ -94,8 +95,6 @@ li {
 	font-family: Arial, Helvetica, sans-serif;
 	font-family: "Roboto", sans-serif;
 	font-style: italic;
-
-
 }
 
 .btn-add {
@@ -216,7 +215,6 @@ li {
 	color: var(--light-dark);
 	background-color: var(--light);
 	font-size: 2.1rem;
-
 }
 
 .popup-btn {
@@ -295,7 +293,6 @@ select {
 // 		backdrop-filter: blur(3px);
 // 		z-index: 10;
 // }
-
 
 .none {
 	display: none;
@@ -739,10 +736,10 @@ main {
 				p {
 					font-size: 4.8rem;
 					// font-family: "Playwrite FR Moderne", cursive;
-					font-family: "Playwrite AU SA", cursive;
+					// font-family: "Playwrite AU SA", cursive;
+					font-family: "Dancing Script", cursive;
 					// font-family:Verdana, Geneva, Tahoma, sans-serif
 					// font-family: Arial, Helvetica, sans-serif;
-
 				}
 				i {
 					padding-top: 20px;
@@ -1149,8 +1146,10 @@ main {
 						display: inline-block;
 						font-size: 1.8rem;
 						font-family: Arial, Helvetica, sans-serif;
+						font-family: "Roboto", sans-serif;
 						// text-shadow: 0 0 1px #000;
 						color: #000;
+						color: rgb(96, 95, 95);
 						white-space: pre-wrap;
 					}
 				}
@@ -1164,7 +1163,11 @@ main {
 					h3 {
 						margin: 10px;
 						color: #000;
+						color: rgb(96, 95, 95);
+						text-shadow: none;
+
 						font-family: Arial, Helvetica, sans-serif;
+						font-family: "Roboto", sans-serif;
 					}
 					div {
 						justify-content: start;
@@ -1178,7 +1181,10 @@ main {
 						margin: 10px;
 						font-size: 1.8rem;
 						font-family: Arial, Helvetica, sans-serif;
+						font-family: "Roboto", sans-serif;
+
 						color: #000;
+						color: rgb(96, 95, 95);
 					}
 					.read-more-button {
 						margin: 10px;
@@ -1187,7 +1193,11 @@ main {
 						.read-more {
 							font-size: 1.9rem;
 							font-family: Arial, Helvetica, sans-serif;
+							font-family: "Roboto", sans-serif;
+
 							color: #000;
+							color: rgb(96, 95, 95);
+
 							cursor: pointer;
 						}
 						img {
@@ -1219,6 +1229,8 @@ main {
 					i {
 						margin: 5px;
 						color: #000;
+						color: rgb(96, 95, 95);
+
 						font-size: 2rem;
 					}
 				}
@@ -1247,6 +1259,7 @@ main {
 	}
 	.p-month {
 		text-align: center;
+		font-family: "Roboto", sans-serif;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 3rem;
 		text-shadow: 1px 1px 2px black;
@@ -1743,7 +1756,6 @@ footer {
 	p {
 		margin: 20px;
 		// font-family: Arial, Helvetica, sans-serif;
-
 	}
 	.login-page-shadow {
 		position: absolute;
@@ -1765,8 +1777,7 @@ footer {
 		backdrop-filter: blur(3px);
 		margin: 40px 5px;
 		box-shadow: 0 0 1px black;
-		background-color: rgba(0, 0, 0, 0.131);
-
+		// background-color: rgba(0, 0, 0, 0.131);
 
 		h1 {
 			font-size: 5.6rem;
@@ -1847,6 +1858,10 @@ footer {
 			}
 			a {
 				padding: 0px 10px;
+				// color: black;
+				// text-shadow: none;
+				// font-family: "Roboto", sans-serif;
+
 				// font-family:Verdana, Geneva, Tahoma, sans-serif
 			}
 			a:hover {
@@ -1896,7 +1911,6 @@ footer {
 	background-color: #bdbec0;
 	background-color: #d3d4d5;
 
-
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -1915,7 +1929,6 @@ footer {
 	box-shadow: 0 0 1px black;
 	text-shadow: 0 0 1px black;
 	background-color: rgba(0, 0, 0, 0.131);
-
 
 	.btn {
 		width: 80%;
@@ -2233,11 +2246,10 @@ footer {
 			margin: 10px 5px;
 			box-shadow: 0 0 1px black;
 
-
 			.remember-forgot {
 				a,
 				label {
-					font-size: 2.0rem;
+					font-size: 2rem;
 				}
 
 				a:hover {
@@ -2257,6 +2269,31 @@ footer {
 }
 
 @media (max-width: 580px) {
+	// .login-page-bgc {
+	// 	.wrapper-login {
+	// 		.remember-forgot {
+	// 			display: flex;
+	// 			justify-content: center;
+	// 			align-items: center;
+	// 			a,
+	// 			label {
+	// 				font-size: 2rem;
+	// 			}
+
+	// 			a:hover {
+	// 				font-size: 2.1rem;
+	// 				color: #399;
+	// 			}
+	// 		}
+	// 		.register-link {
+	// 			p {
+	// 				a {
+	// 					font-size: 2.4rem;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
 	.main-scroll-div {
 		display: flex;
 		align-items: center;
