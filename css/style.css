@@ -1453,6 +1453,7 @@ footer {
 }
 .login-page-bgc .wrapper .remember-forgot label {
   font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
 }
 .login-page-bgc .wrapper .remember-forgot label input {
   accent-color: #fff;
