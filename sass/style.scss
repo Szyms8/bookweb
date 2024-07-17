@@ -326,6 +326,8 @@ select {
 		padding: 10px;
 		font-size: 2.1rem;
 		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+
 
 
 	}
@@ -334,6 +336,8 @@ select {
 		font-size: 2.1rem;
 		line-height: 1px;
 		font-family: "Roboto", sans-serif;
+		font-weight: bold;
+
 
 	}
 	a:hover {
@@ -1848,6 +1852,7 @@ footer {
 			label {
 				font-family: "Roboto", sans-serif;
 				font-size: 1.6rem;
+				font-weight: bold;
 
 				input {
 					accent-color: #fff;
@@ -1860,6 +1865,8 @@ footer {
 				padding: 0px 10px;
 				font-family: "Roboto", sans-serif;
 				font-size: 1.6rem;
+				font-weight: bold;
+
 
 
 				// font-family:Verdana, Geneva, Tahoma, sans-serif
