@@ -1463,6 +1463,7 @@ footer {
 .login-page-bgc .wrapper .remember-forgot a {
   padding: 0px 10px;
   font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
 }
 .login-page-bgc .wrapper .remember-forgot a:hover {
   font-size: 2.1rem;
