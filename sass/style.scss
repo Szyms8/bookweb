@@ -324,9 +324,11 @@ select {
 	margin: 2px 0px;
 	p {
 		padding: 10px;
+		font-size: 2.1rem;
+
 	}
 	a {
-		font-weight: 700;
+		// font-weight: 900;
 		font-size: 2.1rem;
 		line-height: 1px;
 	}
@@ -2237,7 +2239,9 @@ footer {
 			.remember-forgot {
 				a,
 				label {
-					font-size: 2.0rem;
+					font-size: 1.6rem;
+					font-family: "Roboto", sans-serif;
+
 				}
 
 				a:hover {
@@ -2247,8 +2251,14 @@ footer {
 			}
 			.register-link {
 				p {
+					font-family: "Roboto", sans-serif;
+					// font-size: 2.4rem;
+
 					a {
-						font-size: 2.4rem;
+						font-family: "Roboto", sans-serif;
+						// font-size: 2.4rem;
+
+
 					}
 				}
 			}

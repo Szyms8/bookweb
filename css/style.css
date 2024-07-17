@@ -351,9 +351,9 @@ select {
 }
 .register-link p {
   padding: 10px;
+  font-size: 2.1rem;
 }
 .register-link a {
-  font-weight: 700;
   font-size: 2.1rem;
   line-height: 1px;
 }
@@ -1750,14 +1750,18 @@ footer {
   }
   .login-page-bgc .wrapper-login .remember-forgot a,
   .login-page-bgc .wrapper-login .remember-forgot label {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
   }
   .login-page-bgc .wrapper-login .remember-forgot a:hover {
     font-size: 2.1rem;
     color: #399;
   }
+  .login-page-bgc .wrapper-login .register-link p {
+    font-family: "Roboto", sans-serif;
+  }
   .login-page-bgc .wrapper-login .register-link p a {
-    font-size: 2.4rem;
+    font-family: "Roboto", sans-serif;
   }
 }
 @media (max-width: 580px) {
