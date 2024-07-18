@@ -32,7 +32,9 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 // 	text-transform: uppercase;
 // }
 .box-todilist {
-	h1,
+	h1{
+		text-shadow: 0 0 1px black;
+	}
 	h3,
 	.error-info {
 		font-family: "Roboto", sans-serif;
@@ -319,12 +321,15 @@ select {
 .register-link {
 	text-align: center;
 	margin: 2px 0px;
-	p {
-		padding: 10px;
-	}
-	a {
+	// p {
+	// 	font-size: 2.1rem;
+
+	// 	// padding: 10px;
+	// 	// margin: 10px;
+	// }
+	a, p {
 		font-weight: 700;
-		font-size: 2.1rem;
+		font-size: 2.4rem;
 		line-height: 1px;
 	}
 	a:hover {
@@ -1155,7 +1160,7 @@ main {
 				}
 				.picture {
 					display: flex;
-					flex-wrap: w;
+					// flex-wrap: w;
 					justify-content: start;
 					align-items: start;
 					height: 65%;
@@ -1294,6 +1299,10 @@ main {
 		overflow-x: scroll;
 		overflow-y: hidden;
 		padding-bottom: 10px;
+		h4, p {
+			color: rgb(96,95, 95);
+			font-family: "Roboto", sans-serif;
+		}
 
 		.cards {
 			display: inline-block;
@@ -1479,6 +1488,9 @@ main {
 
 	.title-1 {
 		text-align: center;
+		h1 {
+			text-shadow: 0 0 1px black;
+		}
 	}
 	.book-api-box {
 		display: flex;
@@ -1539,6 +1551,8 @@ main {
 		.btn-secondary {
 			padding: 5px;
 			margin: 10px;
+			color: #000;
+			// text-shadow: 0 0 1px black;
 		}
 	}
 }
@@ -1741,6 +1755,7 @@ footer {
 .login-page-bgc {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	min-height: 100vh;
 	background-color: #c6bcb6;
 	background-color: #bdbec0;
@@ -1778,6 +1793,14 @@ footer {
 		margin: 40px 5px;
 		box-shadow: 0 0 1px black;
 		// background-color: rgba(0, 0, 0, 0.131);
+
+		.register-link {
+			p {
+				// margin: 10px;
+				padding: 20px;
+				text-wrap: wrap;
+			}
+		}
 
 		h1 {
 			font-size: 5.6rem;
@@ -1845,11 +1868,12 @@ footer {
 
 		.remember-forgot {
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 			align-items: center;
 			line-height: 1px;
-			font-size: 2rem;
+			font-size: 2.4rem;
 			margin: 10px 5px;
+			padding: 20px;
 			label {
 				input {
 					accent-color: #fff;
@@ -2081,15 +2105,32 @@ footer {
 
 // GOALSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
 
-.login-page-goals {
-}
+// .login-page-bgc {
+// 	.wrapper-goals {
+// 		form {
+// 			.register-link {
+// 				a, button {
+// 					margin: 10px;
+// 				}
+// 			}
+
+// 		}
+// 	}
+// }
 .wrapper-goals {
 	font-size: 2.4rem;
 	box-shadow: 0 0 1px black;
+	.register-link {
+		
+		a {
+			// padding: 10px 10px;
+			margin: 20px;
+
+		}
+	}
 
 	.p-goals {
 		text-align: center;
-		margin-top: 10px;
 	}
 	// .h1 {
 	// 	border: 2px solid rgba(255, 255, 255, 0.2);
@@ -2108,11 +2149,12 @@ footer {
 		border: 2px solid rgba(255, 255, 255, 0.2);
 		border-radius: 10px;
 		margin: 10px;
+		
 		p {
 			// background-color: #fff;
 			// border: 1px solid black;
 			// margin-top: 25px;
-			padding: 10px;
+			padding: 0px 10px;
 		}
 
 		input {
@@ -2182,7 +2224,14 @@ footer {
 			height: 35px;
 		}
 	}
-	.login-page-bgc {
+	// .login-page-bgc {
+	// 	.login-page-shadow {
+	// 		.wrapper-goals{
+	// 			form {
+	// 				text-wrap: wrap;
+	// 			}
+	// 		}
+	// 	}
 		.wrapper-start {
 			display: grid;
 			grid-template-columns: repeat(2, minmax(150px, 1fr));
@@ -2246,10 +2295,17 @@ footer {
 			margin: 10px 5px;
 			box-shadow: 0 0 1px black;
 
+			.register-link{
+				p, a {
+					margin: 20px 0px;
+				}
+			}
+
 			.remember-forgot {
 				a,
 				label {
-					font-size: 2rem;
+					// font-size: 2.4rem;
+					padding: 10px;
 				}
 
 				a:hover {
@@ -2257,13 +2313,14 @@ footer {
 					color: #399;
 				}
 			}
-			.register-link {
-				p {
-					a {
-						font-size: 2.4rem;
-					}
-				}
-			}
+			// .register-link {
+			// 	p {
+			// 		a {
+			// 			// font-size: 2.4rem;
+						
+			// 		}
+			// 	}
+			// }
 		}
 	}
 }

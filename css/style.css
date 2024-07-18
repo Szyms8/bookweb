@@ -87,7 +87,9 @@
   --light: rgb(245, 245, 245);
 }
 
-.box-todilist h1,
+.box-todilist h1 {
+  text-shadow: 0 0 1px black;
+}
 .box-todilist h3,
 .box-todilist .error-info {
   font-family: "Roboto", sans-serif;
@@ -356,12 +358,9 @@ select {
   text-align: center;
   margin: 2px 0px;
 }
-.register-link p {
-  padding: 10px;
-}
-.register-link a {
+.register-link a, .register-link p {
   font-weight: 700;
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   line-height: 1px;
 }
 .register-link a:hover {
@@ -993,7 +992,6 @@ main .wrapper-revievs .friends-ratings .rating .header p {
 }
 main .wrapper-revievs .friends-ratings .rating .picture {
   display: flex;
-  flex-wrap: w;
   justify-content: start;
   align-items: start;
   height: 65%;
@@ -1100,6 +1098,10 @@ main .recent {
   overflow-x: scroll;
   overflow-y: hidden;
   padding-bottom: 10px;
+}
+main .recent h4, main .recent p {
+  color: rgb(96, 95, 95);
+  font-family: "Roboto", sans-serif;
 }
 main .recent .cards {
   display: inline-block;
@@ -1239,6 +1241,9 @@ main .p-margin {
 .container-my-front .title-1 {
   text-align: center;
 }
+.container-my-front .title-1 h1 {
+  text-shadow: 0 0 1px black;
+}
 .container-my-front .book-api-box {
   display: flex;
   align-items: center;
@@ -1288,6 +1293,7 @@ main .p-margin {
 .container-my-front .book-list .btn-secondary {
   padding: 5px;
   margin: 10px;
+  color: #000;
 }
 
 .contact {
@@ -1379,6 +1385,7 @@ footer {
 .login-page-bgc {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   min-height: 100vh;
   background-color: #c6bcb6;
   background-color: #bdbec0;
@@ -1407,6 +1414,10 @@ footer {
           backdrop-filter: blur(3px);
   margin: 40px 5px;
   box-shadow: 0 0 1px black;
+}
+.login-page-bgc .wrapper .register-link p {
+  padding: 20px;
+  text-wrap: wrap;
 }
 .login-page-bgc .wrapper h1 {
   font-size: 5.6rem;
@@ -1460,11 +1471,12 @@ footer {
 }
 .login-page-bgc .wrapper .remember-forgot {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   line-height: 1px;
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin: 10px 5px;
+  padding: 20px;
 }
 .login-page-bgc .wrapper .remember-forgot label input {
   accent-color: #fff;
@@ -1653,7 +1665,7 @@ footer {
   margin: 10px;
 }
 .wrapper-goals .input-box-goals p {
-  padding: 10px;
+  padding: 0px 10px;
 }
 .wrapper-goals .input-box-goals input {
   height: 40px;
@@ -1707,6 +1719,9 @@ footer {
   .navbar-logo img {
     width: 35px;
     height: 35px;
+  }
+  .login-page-bgc .login-page-shadow .wrapper-goals form {
+    text-wrap: w;
   }
   .login-page-bgc .wrapper-start {
     display: grid;
@@ -1765,16 +1780,16 @@ footer {
     margin: 10px 5px;
     box-shadow: 0 0 1px black;
   }
+  .login-page-bgc .wrapper-login .register-link p, .login-page-bgc .wrapper-login .register-link a {
+    margin: 20px 0px;
+  }
   .login-page-bgc .wrapper-login .remember-forgot a,
   .login-page-bgc .wrapper-login .remember-forgot label {
-    font-size: 2rem;
+    padding: 10px;
   }
   .login-page-bgc .wrapper-login .remember-forgot a:hover {
     font-size: 2.1rem;
     color: #399;
-  }
-  .login-page-bgc .wrapper-login .register-link p a {
-    font-size: 2.4rem;
   }
 }
 @media (max-width: 580px) {
