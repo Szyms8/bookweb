@@ -359,7 +359,7 @@ select {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-align: center;
-  margin: 2px 0px;
+  margin: 25px 5px;
 }
 .register-link a,
 .register-link p {
@@ -1421,7 +1421,6 @@ footer {
   background-color: #bdbec0;
 }
 .login-page-bgc .wrapper .register-link p {
-  padding: 20px;
   text-wrap: wrap;
 }
 .login-page-bgc .wrapper h1 {
@@ -1481,7 +1480,6 @@ footer {
   text-align: center;
   font-size: 2.4rem;
   margin: 10px 5px;
-  padding: 20px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
@@ -1490,13 +1488,11 @@ footer {
   margin-right: 0.3rem;
 }
 .login-page-bgc .wrapper .remember-forgot a {
-  padding: 0px 10px;
+  padding: 10px 10px;
   font-size: 2.4rem;
 }
 .login-page-bgc .wrapper .remember-forgot a:hover {
-  font-size: 2.1rem;
   color: #399;
-  line-height: 1px;
 }
 
 .login-page-start {
@@ -1673,6 +1669,7 @@ footer {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   margin: 10px;
+  font-weight: 400;
 }
 .wrapper-goals .input-box-goals p {
   padding: 0px 10px;
