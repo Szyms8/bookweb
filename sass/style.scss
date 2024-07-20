@@ -32,7 +32,7 @@ $bg-shadow: rgba(0, 0, 0, 0.326);
 // 	text-transform: uppercase;
 // }
 .box-todilist {
-	h1{
+	h1 {
 		text-shadow: 0 0 1px black;
 	}
 	h3,
@@ -327,7 +327,8 @@ select {
 	// 	// padding: 10px;
 	// 	// margin: 10px;
 	// }
-	a, p {
+	a,
+	p {
 		font-weight: 700;
 		font-size: 2.4rem;
 		line-height: 1px;
@@ -1299,8 +1300,9 @@ main {
 		overflow-x: scroll;
 		overflow-y: hidden;
 		padding-bottom: 10px;
-		h4, p {
-			color: rgb(96,95, 95);
+		h4,
+		p {
+			color: rgb(96, 95, 95);
 			font-family: "Roboto", sans-serif;
 		}
 
@@ -2121,11 +2123,9 @@ footer {
 	font-size: 2.4rem;
 	box-shadow: 0 0 1px black;
 	.register-link {
-		
 		a {
 			// padding: 10px 10px;
 			margin: 20px;
-
 		}
 	}
 
@@ -2149,7 +2149,7 @@ footer {
 		border: 2px solid rgba(255, 255, 255, 0.2);
 		border-radius: 10px;
 		margin: 10px;
-		
+
 		p {
 			// background-color: #fff;
 			// border: 1px solid black;
@@ -2232,96 +2232,96 @@ footer {
 	// 			}
 	// 		}
 	// 	}
-		.wrapper-start {
-			display: grid;
-			grid-template-columns: repeat(2, minmax(150px, 1fr));
-			grid-template-rows: 100px repeat(4, 200px) 100px;
+	.wrapper-start {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(150px, 1fr));
+		grid-template-rows: 100px repeat(4, 200px) 100px;
 
-			margin: 10px;
+		margin: 10px;
 
+		border-radius: 10px;
+		background: transparent;
+		border: 2px solid rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(3px);
+		box-shadow: 0 0 1px black;
+
+		.icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 2rem;
+			margin: 5px 10px;
+			text-align: center;
+			// height: 200px;
+			// width: 200px;
 			border-radius: 10px;
-			background: transparent;
 			border: 2px solid rgba(255, 255, 255, 0.2);
-			backdrop-filter: blur(3px);
-			box-shadow: 0 0 1px black;
-
-			.icon {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-size: 2rem;
-				margin: 5px 10px;
-				text-align: center;
-				// height: 200px;
-				// width: 200px;
-				border-radius: 10px;
-				border: 2px solid rgba(255, 255, 255, 0.2);
-				i {
-					padding: 10px;
-				}
-			}
-			.icon:hover {
-				transform: scale(1.05);
-			}
-			.paragraph-icon {
-				grid-column: 1/4;
-				grid-row: 1/2;
-			}
-			.icon-1 {
-				grid-column: 1/4;
-				grid-row: 2/3;
-			}
-			.icon-2 {
-				grid-column: 1/4;
-				grid-row: 3/4;
-			}
-			.icon-3 {
-				grid-column: 1/4;
-				grid-row: 4/5;
-			}
-			.icon-4 {
-				grid-column: 1/4;
-				grid-row: 5/6;
-			}
-			.button-icon {
-				grid-column: 1/4;
-				grid-row: 6/7;
-				// width: 200px;
-				// height: 30px;
+			i {
+				padding: 10px;
 			}
 		}
-		.wrapper-login {
-			padding: 0px 10px;
-			margin: 10px 5px;
-			box-shadow: 0 0 1px black;
-
-			.register-link{
-				p, a {
-					margin: 20px 0px;
-				}
-			}
-
-			.remember-forgot {
-				a,
-				label {
-					// font-size: 2.4rem;
-					padding: 10px;
-				}
-
-				a:hover {
-					font-size: 2.1rem;
-					color: #399;
-				}
-			}
-			// .register-link {
-			// 	p {
-			// 		a {
-			// 			// font-size: 2.4rem;
-						
-			// 		}
-			// 	}
-			// }
+		.icon:hover {
+			transform: scale(1.05);
 		}
+		.paragraph-icon {
+			grid-column: 1/4;
+			grid-row: 1/2;
+		}
+		.icon-1 {
+			grid-column: 1/4;
+			grid-row: 2/3;
+		}
+		.icon-2 {
+			grid-column: 1/4;
+			grid-row: 3/4;
+		}
+		.icon-3 {
+			grid-column: 1/4;
+			grid-row: 4/5;
+		}
+		.icon-4 {
+			grid-column: 1/4;
+			grid-row: 5/6;
+		}
+		.button-icon {
+			grid-column: 1/4;
+			grid-row: 6/7;
+			// width: 200px;
+			// height: 30px;
+		}
+	}
+	.wrapper-login {
+		padding: 0px 10px;
+		margin: 10px 5px;
+		box-shadow: 0 0 1px black;
+
+		.register-link {
+			p,
+			a {
+				margin: 20px 0px;
+			}
+		}
+
+		.remember-forgot {
+			a,
+			label {
+				// font-size: 2.4rem;
+				padding: 10px;
+			}
+
+			a:hover {
+				font-size: 2.1rem;
+				color: #399;
+			}
+		}
+		// .register-link {
+		// 	p {
+		// 		a {
+		// 			// font-size: 2.4rem;
+
+		// 		}
+		// 	}
+		// }
 	}
 }
 

@@ -358,7 +358,8 @@ select {
   text-align: center;
   margin: 2px 0px;
 }
-.register-link a, .register-link p {
+.register-link a,
+.register-link p {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 1px;
@@ -1099,7 +1100,8 @@ main .recent {
   overflow-y: hidden;
   padding-bottom: 10px;
 }
-main .recent h4, main .recent p {
+main .recent h4,
+main .recent p {
   color: rgb(96, 95, 95);
   font-family: "Roboto", sans-serif;
 }
@@ -1648,9 +1650,11 @@ footer {
   font-size: 2.4rem;
   box-shadow: 0 0 1px black;
 }
+.wrapper-goals .register-link a {
+  margin: 20px;
+}
 .wrapper-goals .p-goals {
   text-align: center;
-  margin-top: 10px;
 }
 .wrapper-goals .btn {
   margin-top: 220px;
@@ -1720,10 +1724,7 @@ footer {
     width: 35px;
     height: 35px;
   }
-  .login-page-bgc .login-page-shadow .wrapper-goals form {
-    text-wrap: w;
-  }
-  .login-page-bgc .wrapper-start {
+  .wrapper-start {
     display: grid;
     grid-template-columns: repeat(2, minmax(150px, 1fr));
     grid-template-rows: 100px repeat(4, 200px) 100px;
@@ -1735,7 +1736,7 @@ footer {
             backdrop-filter: blur(3px);
     box-shadow: 0 0 1px black;
   }
-  .login-page-bgc .wrapper-start .icon {
+  .wrapper-start .icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1745,49 +1746,50 @@ footer {
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, 0.2);
   }
-  .login-page-bgc .wrapper-start .icon i {
+  .wrapper-start .icon i {
     padding: 10px;
   }
-  .login-page-bgc .wrapper-start .icon:hover {
+  .wrapper-start .icon:hover {
     transform: scale(1.05);
   }
-  .login-page-bgc .wrapper-start .paragraph-icon {
+  .wrapper-start .paragraph-icon {
     grid-column: 1/4;
     grid-row: 1/2;
   }
-  .login-page-bgc .wrapper-start .icon-1 {
+  .wrapper-start .icon-1 {
     grid-column: 1/4;
     grid-row: 2/3;
   }
-  .login-page-bgc .wrapper-start .icon-2 {
+  .wrapper-start .icon-2 {
     grid-column: 1/4;
     grid-row: 3/4;
   }
-  .login-page-bgc .wrapper-start .icon-3 {
+  .wrapper-start .icon-3 {
     grid-column: 1/4;
     grid-row: 4/5;
   }
-  .login-page-bgc .wrapper-start .icon-4 {
+  .wrapper-start .icon-4 {
     grid-column: 1/4;
     grid-row: 5/6;
   }
-  .login-page-bgc .wrapper-start .button-icon {
+  .wrapper-start .button-icon {
     grid-column: 1/4;
     grid-row: 6/7;
   }
-  .login-page-bgc .wrapper-login {
+  .wrapper-login {
     padding: 0px 10px;
     margin: 10px 5px;
     box-shadow: 0 0 1px black;
   }
-  .login-page-bgc .wrapper-login .register-link p, .login-page-bgc .wrapper-login .register-link a {
+  .wrapper-login .register-link p,
+  .wrapper-login .register-link a {
     margin: 20px 0px;
   }
-  .login-page-bgc .wrapper-login .remember-forgot a,
-  .login-page-bgc .wrapper-login .remember-forgot label {
+  .wrapper-login .remember-forgot a,
+  .wrapper-login .remember-forgot label {
     padding: 10px;
   }
-  .login-page-bgc .wrapper-login .remember-forgot a:hover {
+  .wrapper-login .remember-forgot a:hover {
     font-size: 2.1rem;
     color: #399;
   }
