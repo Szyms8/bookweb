@@ -1532,8 +1532,9 @@ footer {
   text-shadow: 0 0 1px black;
 }
 .wrapper-start a {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   padding: 10px;
+  font-weight: 400;
 }
 .wrapper-start p {
   margin-top: 0;
@@ -1612,6 +1613,7 @@ footer {
 }
 .wrapper-challenges a {
   font-size: 2.4rem;
+  font-weight: 400;
 }
 .wrapper-challenges .btn {
   width: 80%;
