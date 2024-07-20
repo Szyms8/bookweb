@@ -1418,6 +1418,7 @@ footer {
           backdrop-filter: blur(3px);
   margin: 40px 5px;
   box-shadow: 0 0 1px black;
+  background-color: #bdbec0;
 }
 .login-page-bgc .wrapper .register-link p {
   padding: 20px;
@@ -1657,11 +1658,9 @@ footer {
   font-size: 2.4rem;
   box-shadow: 0 0 1px black;
 }
-.wrapper-goals .register-link a {
-  margin: 20px;
-}
 .wrapper-goals .p-goals {
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 .wrapper-goals .btn {
   margin-top: 220px;
