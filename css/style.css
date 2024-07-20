@@ -321,6 +321,7 @@ a {
   color: #fff;
   color: wheat;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 input,
@@ -355,18 +356,18 @@ select {
 }
 
 .register-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   text-align: center;
   margin: 2px 0px;
 }
 .register-link a,
 .register-link p {
-  font-weight: 700;
   font-size: 2.4rem;
-  line-height: 1px;
 }
 .register-link a:hover {
   color: #399;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 .btn {
@@ -1340,6 +1341,7 @@ main .p-margin {
   justify-content: space-around;
   align-items: center;
   width: 95%;
+  text-shadow: 0 0 1px black;
   margin: 10px;
 }
 .contact .contact-img .contact-text .contact-text-section .contact-specific {
@@ -1475,10 +1477,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: 1px;
+  text-align: center;
   font-size: 2.4rem;
   margin: 10px 5px;
   padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 .login-page-bgc .wrapper .remember-forgot label input {
   accent-color: #fff;
@@ -1486,6 +1490,7 @@ footer {
 }
 .login-page-bgc .wrapper .remember-forgot a {
   padding: 0px 10px;
+  font-size: 2.4rem;
 }
 .login-page-bgc .wrapper .remember-forgot a:hover {
   font-size: 2.1rem;
@@ -1777,12 +1782,12 @@ footer {
     grid-row: 6/7;
   }
   .wrapper-login {
-    padding: 0px 10px;
-    margin: 10px 5px;
+    margin: 0px 5px;
     box-shadow: 0 0 1px black;
   }
   .wrapper-login .register-link p,
   .wrapper-login .register-link a {
+    padding: 0;
     margin: 20px 0px;
   }
   .wrapper-login .remember-forgot a,

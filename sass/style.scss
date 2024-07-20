@@ -278,12 +278,15 @@ a {
 	color: #fff;
 	color: wheat;
 	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	// font-size: 2.6rem;
 }
 input,
 button,
 textarea,
 select {
 	font-family: inherit;
+	// font-family: "Roboto", sans-serif;
 }
 // .wrapper {
 // 		width: 450px;
@@ -319,8 +322,11 @@ select {
 	align-items: center;
 }
 .register-link {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 	text-align: center;
 	margin: 2px 0px;
+	// text-wrap: wrap;
 	// p {
 	// 	font-size: 2.1rem;
 
@@ -329,13 +335,13 @@ select {
 	// }
 	a,
 	p {
-		font-weight: 700;
+		// font-weight: 700;
 		font-size: 2.4rem;
-		line-height: 1px;
+		// line-height: 1px;
 	}
 	a:hover {
 		color: #399;
-		font-size: 2.2rem;
+		font-size: 2.4rem;
 	}
 }
 .btn {
@@ -1681,7 +1687,7 @@ section {
 				justify-content: space-around;
 				align-items: center;
 				width: 95%;
-				// height: 200px;
+				text-shadow: 0 0 1px black;
 				// border: 2px solid wheat;
 				margin: 10px;
 				// z-index: 199;
@@ -1872,10 +1878,13 @@ footer {
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			line-height: 1px;
+			text-align: center;
+			// line-height: 1px;
 			font-size: 2.4rem;
 			margin: 10px 5px;
 			padding: 20px;
+			font-family: "Roboto", sans-serif;
+			font-weight: 400;
 			label {
 				input {
 					accent-color: #fff;
@@ -1884,7 +1893,7 @@ footer {
 			}
 			a {
 				padding: 0px 10px;
-				// color: black;
+				font-size: 2.4rem; // color: black;
 				// text-shadow: none;
 				// font-family: "Roboto", sans-serif;
 
@@ -2291,14 +2300,16 @@ footer {
 		}
 	}
 	.wrapper-login {
-		padding: 0px 10px;
-		margin: 10px 5px;
+		// padding: 0px 10px;
+		margin: 0px 5px;
 		box-shadow: 0 0 1px black;
 
 		.register-link {
 			p,
 			a {
+				padding: 0;
 				margin: 20px 0px;
+				
 			}
 		}
 
